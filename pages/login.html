@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-Cineapolis</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!--Iconos-->
+    <script
+      src="https://kit.fontawesome.com/febcde3020.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <header class="menu-container">
+    <section class="menu">
+      <a class="menu-iten" href="../index.html">
+        <img class="menu-logo logo" src="../img/logo.png" alt="logo" />
+      </a>
+      <ul>
+        <il class="menu-iten">
+          <a href="../index.html">Inicio</a>
+        </il>
+        <il class="menu-iten">
+          <a href="cartelera.html">Cartelera</a>
+        </il>
+        <il class="menu-iten">
+          <a href="estrenos.html">proximos estrenos</a>
+        </il>
+      </ul>
+      <a class="menu-iten icono-login" href="login.html">
+        <i class="fa-solid fa-circle-user"></i>
+      </a>
+    </section>
+  </header>
+  <body>
+    <section class="formulario-login-container">
+      <form class="formulario-login">
+        <h2 class="formulario-login-subtitulo subtitulo">login</h2>
+        <hr />
+        <h3 class="formulario-login-subtitulo2 subtitulo2">
+          Ingresa a tu cuenta
+        </h3>
+        <section class="formulario-login-campo">
+          <label for="usuario">E-mail:</label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            required
+            placeholder="perezpedro@..."
+          />
+        </section>
+        <section class="formulario-login-campo">
+          <label for="contraseña">Contraseña:</label>
+          <input
+            type="password"
+            id="contraseña"
+            name="contraseña"
+            required
+            placeholder="*******"
+          />
+        </section>
+        <section class="formulario-login-botones">
+          <button class="btn" type="submit">Ingresar</button>
+          <a class="formulario-login-botones-registro" href="registro.html">¿No tenes cuenta? Creala</a>
+        </section>
+      </form>
+    </section>
+  </body>
+  <footer class="footer-container">
+    <section class="footer">
+      <section class="footer-copy">
+        <p>Página sin fines de lucro ni comerciales</p>
+        <p>© 2023 Cineapolis, Tomás Zappalá</p>
+      </section>
+      <img class="footer-logo logo" src="../img/logo.png" alt="logo" />
+      <section class="footer-redes">
+        <a href="https://www.facebook.com/">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.youtube.com/">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </section>
+    </section>
+  </footer>
+</html>

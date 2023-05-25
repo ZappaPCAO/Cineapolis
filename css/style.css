@@ -1,0 +1,320 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.logo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+}
+/*TAMAÑAO PARA LA IMAGENES DEFAULT DE LA PRIMERA PREENTREGA*/
+.tamaño-imagenes-pe {
+  height: 30rem;
+  width: 20rem;
+}
+
+/*Titulos y subtitulos del sistema*/
+.titulo {
+  font-size: x-large;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.subtitulo {
+  font-size: large;
+  text-transform: uppercase;
+  padding: 0.3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.subtitulo2 {
+  font-size: medium;
+  color: gray;
+  font-family: 'Roboto', sans-serif;
+}
+/*---------------------------------*/
+
+/*Botones del sistema--------------*/
+.btn {
+  background-color: #4842ff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff0093;
+}
+/*---------------------------------*/
+
+/*Menu - Header*/
+.menu-container {
+  background-color: #101010;
+  color: #fff;
+  padding: 0.8rem;
+
+  border-bottom: 0.2rem solid transparent;
+  border-image: linear-gradient(0.25turn, #fff, #ff0093, #000);
+  border-image-slice: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.25s;
+}
+.menu a:hover {
+  color: #ff0093;
+}
+.menu-logo {
+  width: 3rem;
+  height: 3rem;
+}
+.menu-iten {
+  padding: 1rem;
+}
+.menu .icono-login {
+  font-size: x-large;
+}
+/*-----------------------*/
+/*footer-----------------*/
+.footer-container {
+  text-align: center;
+  background-color: #101010;
+  padding: 0.8rem;
+  border-top: 0.2rem solid transparent;
+  border-image: linear-gradient(0.25turn, #fff, #ff0093, #000);
+  border-image-slice: 1;
+  width: 100%;
+}
+
+.footer {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.25s;
+  margin-right: 1.3rem;
+}
+.footer-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+.footer-redes {
+  border: none;
+}
+
+.footer-redes a {
+  font-size: x-large;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 0.25rem;
+}
+
+.footer-redes a:hover {
+  color: #ff0093;
+}
+/*-----------------------*/
+
+/*SLIDER-----------------*/
+.slider-frame-container {
+  background-color: #101010;
+  width: 100%;
+  padding: 1rem 0;
+}
+.slider-frame {
+  padding: 0;
+  margin: 0;
+  margin-left: 16.5%;
+}
+.slider-frame-titulo {
+  color: #fff;
+  text-align: center;
+}
+.slider-frame-img {
+  border-radius: 0.5rem;
+}
+/*-----------------------*/
+/*peliculas cartelera inicio*/
+.peliculas-inicio-container {
+  background-color: #101010;
+  color: #fff;
+}
+.peliculas-inicio-titulo {
+  margin-left: 5rem;
+}
+/*--------------------------*/
+
+/*Proximos estrenos------*/
+.proximos-estrenos-container {
+  background-color: #101010;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+.proximos-estrenos {
+  padding: 1rem;
+}
+
+.proximos-estrenos-iten img {
+  border-radius: 0.5rem;
+}
+/*-----------------------*/
+
+/*Newsletter-------------*/
+.newsletter-container {
+  background-color: #101010;
+  color: #fff;
+  padding: 1rem;
+}
+.newsletter {
+  padding: 0 1rem 0.5rem 1rem;
+  background-color: rgb(47, 47, 47);
+}
+
+.newsletter-imput {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  width: 30%;
+  border: none;
+  border-radius: 0.2rem;
+}
+/*-----------------------*/
+/*Pelicula---------------*/
+.pelicula-container {
+  background-color: #101010;
+  color: #fff;
+}
+.pelicula-titulo {
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+.pelicula {
+  padding: 1rem;
+  width: 20rem;
+}
+.pelicula-sinopsis {
+  padding: 1rem 1rem;
+}
+
+.pelicula-fechas-disponibles {
+  padding: 1rem;
+}
+
+.pelicula-trailer {
+  margin-left: 70%;
+  padding: 1rem 0 0.5rem 0;
+}
+.pelicula-trailer h2 {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+/*-----------------------*/
+/*Cartelera--------------*/
+.cartelera-container {
+  background-color: #101010;
+  color: #fff;
+}
+.cartelera {
+  padding: 0.25rem 2rem;
+  width: 12.5rem;
+}
+.cartelera-nombre {
+  background-color: #4842ff;
+  color: #fff;
+  padding: 0.25rem 0 0.25rem 0.5rem;
+  text-decoration: none;
+}
+/*-----------------------*/
+/*Promo cartelera--------*/
+.promo-container {
+  background-color: #101010;
+  color: #fff;
+  padding: 1rem;
+}
+
+.promo {
+  padding: 1rem;
+}
+
+.promo-container li {
+  list-style: none;
+  padding: 0.25rem 0 0 0.25rem;
+}
+/*-----------------------*/
+/*Estrenos---------------*/
+.estrenos-peliulas-container {
+  background-color: #101010;
+  color: #fff;
+}
+
+.estrenos-peliculas-iten {
+  padding: 1rem;
+  width: 25rem;
+}
+
+.estrenos-peliculas-iten p {
+  padding: 2rem 0 1rem 0;
+}
+
+.estrenos-peliculas-iten a {
+  color: #ff0093;
+  text-decoration: none;
+}
+.estrenos-peliculas-iten h2 {
+  color: #ff0093;
+}
+/*-----------------------*/
+/*Formularios login y registro*/
+.formulario-login-container{
+  background-color: #101010;
+  color: #fff;
+}
+.formulario-login{
+  text-align: center;
+}
+.formulario-login-campo{
+  padding-bottom: .5rem;
+}
+.formulario-login-botones{
+  padding: .3rem;
+}
+
+.formulario-login-botones-registro{
+  text-decoration: none;
+  color: #ff0093;
+}
+
+.formulario-registro-container{
+  background-color: #101010;
+  color:#fff;
+}
+.formulario-registro{
+  text-align: center;
+}
+
+.formulario-registro-campo{
+  padding-bottom: .5rem;
+}
+.formulario-registro-botones{
+  padding: .3rem;
+}
+.formulario-registro-botones-login{
+  text-decoration: none;
+  color: #ff0093;
+}

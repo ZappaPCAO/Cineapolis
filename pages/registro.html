@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro-Cineapolis</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!--Iconos-->
+    <script
+      src="https://kit.fontawesome.com/febcde3020.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <header class="menu-container">
+    <section class="menu">
+      <a class="menu-iten" href="../index.html">
+        <img class="menu-logo logo" src="../img/logo.png" alt="logo" />
+      </a>
+      <ul>
+        <il class="menu-iten">
+          <a href="../index.html">inicio</a>
+        </il>
+        <il class="menu-iten">
+          <a href="cartelera.html">cartelera</a>
+        </il>
+        <il class="menu-iten">
+          <a href="estrenos.html">proximos estrenos</a>
+        </il>
+      </ul>
+      <a class="menu-iten icono-login" href="login.html">
+        <i class="fa-solid fa-circle-user"></i>
+      </a>
+    </section>
+  </header>
+  <body>
+    <section class="formulario-registro-container">
+      <form class="formulario-registro">
+        <h2 class="formulario-registro-subtitulo subtitulo">crear usuario</h2>
+        <hr />
+        <h3 class="formulario-registro-subtitulo2 subtitulo2">Registrate</h3>
+        <section class="formulario-registro-campo">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            placeholder="Tomás"
+          />
+        </section>
+        <section class="formulario-registro-campo">
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            required
+            placeholder="Perez"
+          />
+        </section>
+        <section class="formulario-registro-campo">
+          <label for="email">Correo electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="pedroperez@..."
+          />
+        </section>
+        <section class="formulario-registro-campo">
+          <label for="genero">Género:</label>
+          <select id="genero" name="genero" required>
+            <option value="">Selecciona una opción</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+        </section>
+        <section class="formulario-registro-campo">
+          <label for="contraseña">Contraseña:</label>
+          <input
+            type="password"
+            id="contraseña"
+            name="contraseña"
+            minlength="6"
+            required
+            placeholder="*******"
+          />
+        </section>
+        <section class="formulario-registro-campo">
+          <label for="confirmar-contraseña">Confirmar contraseña:</label>
+          <input
+            type="password"
+            id="confirmar-contraseña"
+            name="confirmar-contraseña"
+            minlength="6"
+            required
+            placeholder="*******"
+          />
+        </section>
+        <section class="botones">
+          <button class="btn" type="submit">Registrarse</button>
+          <a class="formulario-registro-botones-login" href="login.html">¿Ya tienes cuenta? Logeate</a>
+        </section>
+      </form>
+    </section>
+  </body>
+  <footer class="footer-container">
+    <section class="footer">
+      <section class="footer-copy">
+        <p>Página sin fines de lucro ni comerciales</p>
+        <p>© 2023 Cineapolis, Tomás Zappalá</p>
+      </section>
+      <img class="footer-logo logo" src="../img/logo.png" alt="logo" />
+      <section class="footer-redes">
+        <a href="https://www.facebook.com/">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.youtube.com/">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </section>
+    </section>
+  </footer>
+</html>
