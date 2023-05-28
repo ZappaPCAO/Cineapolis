@@ -59,40 +59,41 @@
 /*---------------------------------*/
 
 /*Menu - Header*/
-.menu-container {
-  background-color: #101010;
-  color: #fff;
-  padding: 0.8rem;
-
-  border-bottom: 0.2rem solid transparent;
-  border-image: linear-gradient(0.25turn, #fff, #ff0093, #000);
-  border-image-slice: 1;
-  width: 100%;
-  text-align: center;
+.menu {
+  background-color: #101010 !important;
+  padding: 0.5rem 1.5rem !important;
+  border-bottom: 0.2rem solid transparent !important;
+  border-image: linear-gradient(0.25turn, #fff, #ff0093, #000) !important;
+  border-image-slice: 1  !important;
+  width: 100% !important;
 }
 
-.menu ul {
-  list-style: none;
-}
 .menu a {
   color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: color 0.25s;
+  text-transform: uppercase !important;
+  transition: color 0.25s !important;
 }
+
+.menu a.active{
+  color: #ff0085 !important;
+}
+
 .menu a:hover {
-  color: #ff0093;
+  color: #ff0093 !important;
 }
-.menu-logo {
+.menu .menu-logo {
   width: 3rem;
   height: 3rem;
 }
-.menu-iten {
-  padding: 1rem;
-}
+
 .menu .icono-login {
   font-size: x-large;
 }
+
+.menu .drop ul li a{
+  color: #000 !important;
+}
+
 /*-----------------------*/
 /*footer-----------------*/
 .footer-container {
