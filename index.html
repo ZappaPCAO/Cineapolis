@@ -18,27 +18,6 @@
       crossorigin="anonymous"
     ></script>
   </head>
-    <!-- <header class="menu-container">
-      <section class="menu">
-        <a class="menu-iten" href="index.html">
-          <img class="menu-logo logo" src="img/logo.png" alt="logo" />
-        </a>
-        <ul>
-          <il class="menu-iten">
-            <a href="index.html">inicio</a>
-          </il>
-          <il class="menu-iten">
-            <a href="pages/cartelera.html">cartelera</a>
-          </il>
-          <il class="menu-iten">
-            <a href="pages/estrenos.html">proximos estrenos</a>
-          </il>
-        </ul>
-        <a class="menu-iten icono-login" href="pages/login.html">
-          <i class="fa-solid fa-circle-user"></i>
-        </a>
-      </section>
-    </header> -->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
         <div class="container-fluid justify-content-around">
@@ -57,58 +36,51 @@
               <li class="nav-item">
                 <a class="nav-link" href="pages/estrenos.html">proximos estrenos</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/estrenos.html"></a>
+              </li>
             </ul>
           </div>
-          <div class="drop dropdown" id="navbarScroll">
+          <div class="drop dropdown d-inline-block justify-content-start" id="navbarScroll">
             <a class="icono-login" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-circle-user"></i>
             </a>
             <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><a class="dropdown-item" href="#">login</a></li>
-              <li><a class="dropdown-item" href="#">register</a></li>
+              <li><a class="dropdown-item" href="pages/login.html">ingresar</a></li>
+              <li><a class="dropdown-item" href="pages/registro.html">registrarse</a></li>
             </ul>
           </div>
         
         </div>
       </nav>
     </header>
-    <body>
-      <section class="slider-frame-container">
-        <h1 class="slider-frame-titulo titulo">slider</h1>
-        <section class="slider-frame">
-          <ul>
-            <li>
-              <a href="#">
-                <img
-                  class="slider-frame-img tamaño-imagenes-pe"
-                  src="img/slider/slider-prueba.png"
-                  alt="silder1"
-                />
-              </a>
-              <a href="#">
-                <img
-                  class="slider-frame-img tamaño-imagenes-pe"
-                  src="img/slider/slider-prueba-2.png"
-                  alt="silder2"
-                />
-              </a>
-              <a href="#">
-                <img
-                  class="slider-frame-img tamaño-imagenes-pe"
-                  src="img/slider/slider-prueba-3.png"
-                  alt="silder3"
-                /> </a
-              ><a href="#">
-                <img
-                  class="slider-frame-img tamaño-imagenes-pe"
-                  src="img/slider/slider-prueba-4.png"
-                  alt="silder4"
-                />
-              </a>
-            </li>
-          </ul>
-        </section>
-      </section>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="d-indicators carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item d-item">
+            <img src="img/carousel/back-to-the-future-slogan.jpg" class="d-img d-block w-50 h-50" alt="back to the future">
+          </div>
+          <div class="carousel-item d-item">
+            <img src="img/carousel/jur-park.jpg" class="d-img d-block w-50 h-50" alt="jurassic park">
+          </div>
+          <div class="carousel-item active d-item">
+            <img src="img/carousel/indiana-jones.jpg" class="d-img d-block w-50 h-50" alt="indiana jones">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="prueba carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
       <section class="peliculas-inicio-container">
         <h1 class="peliculas-inicio-titulo titulo">peliculas 2d</h1>
         <section class="peliculas-inicio cartelera">
@@ -205,12 +177,12 @@
             name="newsletter"
             id="newsletter"
             required
-            placeholder="Ingresá tu E-mail..."
+            placeholder="Ingresá tu E-mailimg/slider/slider-prueba-2.png"
           /><button class="btn" type="submit">Suscribirse</button>
         </section>
       </section>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    </body>
+    
     <footer class="footer-container">
       <section class="footer">
         <section class="footer-copy">

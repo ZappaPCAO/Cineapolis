@@ -94,7 +94,30 @@
   color: #000 !important;
 }
 
+@media (max-width: 991px){
+  .menu .drop{
+    width: 100px !important;
+  }
+}
+
+
 /*-----------------------*/
+/*slider-----------------*/
+
+.d-item{
+  height: 45rem;
+}
+
+.d-img{
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.d-indicators button{
+  background-color: #ff0085 !important;
+}
+/*-----------------------*/
+
 /*footer-----------------*/
 .footer-container {
   text-align: center;
