@@ -1,14 +1,18 @@
 /*fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+body {
+  background-color: #101010;
+}
+
 .logo {
   width: 2rem;
   height: 2rem;
@@ -26,20 +30,20 @@
   font-size: x-large;
   text-transform: uppercase;
   padding: 0.5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .subtitulo {
   font-size: large;
   text-transform: uppercase;
   padding: 0.3rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .subtitulo2 {
   font-size: medium;
   color: gray;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*---------------------------------*/
 
@@ -64,7 +68,7 @@
   padding: 0.5rem 1.5rem !important;
   border-bottom: 0.2rem solid transparent !important;
   border-image: linear-gradient(0.25turn, #fff, #ff0093, #000) !important;
-  border-image-slice: 1  !important;
+  border-image-slice: 1 !important;
   width: 100% !important;
 }
 
@@ -74,7 +78,7 @@
   transition: color 0.25s !important;
 }
 
-.menu a.active{
+.menu a.active {
   color: #ff0085 !important;
 }
 
@@ -90,31 +94,66 @@
   font-size: x-large;
 }
 
-.menu .drop ul li a{
+.menu .drop ul li a {
   color: #000 !important;
 }
 
-@media (max-width: 991px){
-  .menu .drop{
+@media (max-width: 991px) {
+  .menu .drop {
     width: 100px !important;
   }
 }
 
-
 /*-----------------------*/
 /*slider-----------------*/
 
-.d-item{
+.d-item {
   height: 45rem;
 }
 
-.d-img{
+.d-img {
   height: 100% !important;
   width: 100% !important;
 }
 
-.d-indicators button{
+.d-indicators button {
   background-color: #ff0085 !important;
+}
+/*-----------------------*/
+
+/*----cartelera----------*/
+.cart-card {
+  width: 18rem;
+  border: none;
+  background-color: #101010;
+  border-radius: 50%;
+  transition: border-radius 0.5s ease-in-out;
+}
+.cart-card:hover {
+  border: solid;
+  border-radius: 0%;
+}
+.cart-card img {
+  padding-top: 0.5rem;
+  border-top-left-radius: 3.5%;
+  border-top-right-radius: 3.5%;
+}
+.cart-card a {
+  text-decoration: none;
+}
+
+.cart-title {
+  border-bottom: 0.1rem solid;
+  border-color: #ff0093;
+}
+
+.cart-title-movie {
+  background-color: #4842ff !important;
+  padding: 0.25rem 1rem;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 /*-----------------------*/
 
@@ -156,25 +195,6 @@
 }
 /*-----------------------*/
 
-/*SLIDER-----------------*/
-.slider-frame-container {
-  background-color: #101010;
-  width: 100%;
-  padding: 1rem 0;
-}
-.slider-frame {
-  padding: 0;
-  margin: 0;
-  margin-left: 16.5%;
-}
-.slider-frame-titulo {
-  color: #fff;
-  text-align: center;
-}
-.slider-frame-img {
-  border-radius: 0.5rem;
-}
-/*-----------------------*/
 /*peliculas cartelera inicio*/
 .peliculas-inicio-container {
   background-color: #101010;
@@ -305,40 +325,40 @@
 }
 /*-----------------------*/
 /*Formularios login y registro*/
-.formulario-login-container{
+.formulario-login-container {
   background-color: #101010;
   color: #fff;
 }
-.formulario-login{
+.formulario-login {
   text-align: center;
 }
-.formulario-login-campo{
-  padding-bottom: .5rem;
+.formulario-login-campo {
+  padding-bottom: 0.5rem;
 }
-.formulario-login-botones{
-  padding: .3rem;
+.formulario-login-botones {
+  padding: 0.3rem;
 }
 
-.formulario-login-botones-registro{
+.formulario-login-botones-registro {
   text-decoration: none;
   color: #ff0093;
 }
 
-.formulario-registro-container{
+.formulario-registro-container {
   background-color: #101010;
-  color:#fff;
+  color: #fff;
 }
-.formulario-registro{
+.formulario-registro {
   text-align: center;
 }
 
-.formulario-registro-campo{
-  padding-bottom: .5rem;
+.formulario-registro-campo {
+  padding-bottom: 0.5rem;
 }
-.formulario-registro-botones{
-  padding: .3rem;
+.formulario-registro-botones {
+  padding: 0.3rem;
 }
-.formulario-registro-botones-login{
+.formulario-registro-botones-login {
   text-decoration: none;
   color: #ff0093;
 }
