@@ -19,45 +19,46 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
-      <div class="container-fluid justify-content-around">
-        <a class="navbar-brand" href="../index.html"><img class="menu-logo logo" src="../img/logo.png" alt="logo" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse justify-content-center" id="navbarScroll">
-          <ul class="navbar-nav navbar-nav-scroll">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html">inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">cartelera</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="estrenos.html">proximos estrenos</a>
-            </li>
-          </ul>
-        </div>
-        <div class="drop dropdown" id="navbarScroll">
-          <a class="icono-login" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-circle-user"></i>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-lg-end">
-            <li><a class="dropdown-item" href="login.html">login</a></li>
-            <li><a class="dropdown-item" href="registro.html">register</a></li>
-          </ul>
-        </div>
-      
-      </div>
-    </nav>
-  </header>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class="menu-logo logo" src="../img/logo.png" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse justify-content-end align-items-center" id="navbarScroll">
+            <ul class="navbar-nav navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">cartelera</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="estrenos.html">proximos estrenos</a>
+              </li>
+              <li class="nav-item">
+                <div class="drop dropdown d-inline-block justify-content-start">
+                  <a class="icono-login" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-circle-user"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-lg-end">
+                    <li><a class="dropdown-item" href="login.html">ingresar</a></li>
+                    <li><a class="dropdown-item" href="registro.html">registrarse</a></li>
+                  </ul>
+                </div>
+              </li>              
+            </ul>
+          </div>        
+        </div>
+      </nav>
+    </header>
     <div class="container">
       <h1 class="cart-title titulo text-white">cartelera</h1>
-      <div class="row justify-content-center">
+      <div class="row justify-content-around mx-auto">
         <div
-          class="cart-card col-lg-3 card"
+          class="cart-card col-lg-3 col-md-4 col-sm-6 card"
           title="Batman el caballero de la noche asciende"
         >
           <a href="pelicula.html">
@@ -73,7 +74,7 @@
             </div>
           </a>
         </div>
-        <div class="cart-card col-lg-3 card">
+        <div class="cart-card col-lg-3 col-md-4 col-sm-6 card">
           <a href="pelicula.html">
             <img
               src="../img/cartelera/Batman-Inicia.jpg"
@@ -87,7 +88,7 @@
             </div>
           </a>
         </div>
-        <div class="cart-card col-lg-3 card">
+        <div class="cart-card col-lg-3 col-md-4 col-sm-6 card">
           <a href="pelicula.html">
             <img
               src="../img/cartelera/calabozos-dragones.jpg"
@@ -101,7 +102,69 @@
             </div>
           </a>
         </div>
-        <div class="cart-card col-lg-3 card">
+        <div class="cart-card col-lg-3 col-md-4 col-sm-6 card">
+          <a href="pelicula.html">
+            <img
+              src="../img/cartelera/cuentos-de-la-tierra.jpg"
+              class="card-img-top"
+              alt="cuentos de la tierra"
+            />
+            <div class="card-body p-0" title="Cuentos de la tierra">
+              <p class="cart-title-movie card-title text-white">
+                Cuentos de la tierra
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="cart-card col-lg-3 col-md-4 col-sm-6 card"
+          title="Los caballeros del zodiaco"
+        >
+          <a href="pelicula.html">
+            <img
+              src="../img/cartelera/los-caballeros-del-zodiaco.jpg"
+              class="card-img-top"
+              alt="los caballeros del zodiaco"
+            />
+            <div class="card-body p-0">
+              <p class="cart-title-movie card-title text-white">
+                Los caballeros del zodiaco
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="cart-card col-lg-3 col-md-4 col-sm-6 card"
+          title="Los caballeros del zodiaco"
+        >
+          <a href="pelicula.html">
+            <img
+              src="../img/cartelera/mario-bros.jpg"
+              class="card-img-top"
+              alt="Mario bros"
+            />
+            <div class="card-body p-0">
+              <p class="cart-title-movie card-title text-white">
+                Mario bros
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="cart-card col-lg-3 col-md-4 col-sm-6 card">
+          <a href="pelicula.html">
+            <img
+              src="../img/cartelera/calabozos-dragones.jpg"
+              class="card-img-top"
+              alt="calabozos & dragones"
+            />
+            <div class="card-body p-0" title="Calabozos & Dragones">
+              <p class="cart-title-movie card-title text-white">
+                Calabozos & Dragones
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="cart-card col-lg-3 col-md-4 col-sm-6 card">
           <a href="pelicula.html">
             <img
               src="../img/cartelera/cuentos-de-la-tierra.jpg"
@@ -116,62 +179,35 @@
           </a>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="cart-card col-lg-3 card">
-          <a href="pelicula.html">
-            <img
-              src="../img/cartelera/los-caballeros-del-zodiaco.jpg"
-              class="card-img-top"
-              alt="los caballeros del zodiaco"
-            />
-            <div class="card-body p-0" title="Los caballeros del zodiaco">
-              <p class="cart-title-movie card-title text-white">
-                Los caballeros del zodiaco
-              </p>
-            </div>
-          </a>
+    </div>
+  
+    <div class="promo card">
+      <div class="row justify-content-center align-content-center mx-auto">
+        <div class="col-6">
+          <img src="../img/promociones/miercoles-de-promo.jpg" class="card-img" alt="miercoles de promo">
         </div>
-        <div class="cart-card col-lg-3 card">
-          <a href="pelicula.html">
-            <img
-              src="../img/cartelera/mario-bros.jpg"
-              class="card-img-top"
-              alt="mario bros"
-            />
-            <div class="card-body p-0" title="mario">
-              <p class="cart-title-movie card-title text-white">Mario bros</p>
-            </div>
-          </a>
+        <div class="col-6">
+          <div class="card-body">          
+            <h2 class="card-title promo-subtitulo subtitulo">¡promo del mes!</h2>
+            <ol>
+              <li>#1 Súper mario bros: La película</li>
+              <li>#2 Evil dead: El despertar</li>
+              <li>#3 La extorsion</li>
+              <li>#4 El exorcista del papa</li>
+              <li>#5 Los caballeros del zodiaco</li>
+            </ol>            
+          </div>
         </div>
       </div>
     </div>
-    <section class="promo-container">
-      <section class="promo">
-        <h2 class="promo-subtitulo subtitulo">¡promo del mes!</h2>
-        <a class="tamaño-imagenes-pe" href="#"
-          ><img
-            src="../img/promociones/miercoles-de-promo.jpg"
-            alt="miercoles-de-promo"
-        /></a>
-        <h2 class="subtitulo">#top 5</h2>
-        <ol>
-          <li>#1 Súper mario bros: La película</li>
-          <li>#2 Evil dead: El despertar</li>
-          <li>#3 La extorsion</li>
-          <li>#4 El exorcista del papa</li>
-          <li>#5 Los caballeros del zodiaco</li>
-        </ol>
-      </section>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
-  <footer class="footer-container">
-    <section class="footer">
+    <footer class="footer">
       <section class="footer-copy">
-        <p>Página sin fines de lucro ni comerciales</p>
-        <p>© 2023 Cineapolis, Tomás Zappalá</p>
+        <!-- A esta etiqueta P la completo con css para poder cambiar al contenido que quiero dependiendo la pantalla-->
+        <p></p>  
       </section>
-      <img class="footer-logo logo" src="../img/logo.png" alt="logo" />
+      <section class="footer-logo">
+        <img class="logo" src="../img/logo.png" alt="logo" />
+      </section>
       <section class="footer-redes">
         <a href="https://www.facebook.com/">
           <i class="fa-brands fa-facebook"></i>
@@ -182,7 +218,8 @@
         <a href="https://www.instagram.com/">
           <i class="fa-brands fa-instagram"></i>
         </a>
-      </section>
     </section>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
 </html>

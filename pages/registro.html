@@ -19,17 +19,18 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
-      <div class="container-fluid justify-content-around">
+      <div class="container-fluid">
         <a class="navbar-brand" href="../index.html"><img class="menu-logo logo" src="../img/logo.png" alt="logo" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse justify-content-center" id="navbarScroll">
+        <div class="navbar-collapse justify-content-end align-items-center" id="navbarScroll">
           <ul class="navbar-nav navbar-nav-scroll">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html">inicio</a>
+              <a class="nav-link" href="../index.html">inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cartelera.html">cartelera</a>
@@ -37,21 +38,22 @@
             <li class="nav-item">
               <a class="nav-link" href="estrenos.html">proximos estrenos</a>
             </li>
+            <li class="nav-item">
+              <div class="drop dropdown d-inline-block justify-content-start">
+                <a class="icono-login active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-circle-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><a class="dropdown-item" href="login.html">ingresar</a></li>
+                  <li><a class="dropdown-item" href="#">registrarse</a></li>
+                </ul>
+              </div>
+            </li>              
           </ul>
-        </div>
-        <div class="drop dropdown" id="navbarScroll">
-          <a class="icono-login active" href="#" role="button" data-bs-toggle="#" aria-expanded="false">
-            <i class="fa-solid fa-circle-user"></i>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-lg-end">
-            <li><a class="dropdown-item" href="login.html">login</a></li>
-            <li><a class="dropdown-item" href="registro.html">register</a></li>
-          </ul>
-        </div>
+        </div>        
       </div>
     </nav>
-  </header>
-  <body>
+  </header> 
     <section class="formulario-registro-container">
       <form class="formulario-registro">
         <h2 class="formulario-registro-subtitulo subtitulo">crear usuario</h2>
@@ -124,15 +126,14 @@
         </section>
       </form>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
-  <footer class="footer-container">
-    <section class="footer">
+    <footer class="footer">
       <section class="footer-copy">
-        <p>Página sin fines de lucro ni comerciales</p>
-        <p>© 2023 Cineapolis, Tomás Zappalá</p>
+        <!-- A esta etiqueta P la completo con css para poder cambiar al contenido que quiero dependiendo la pantalla-->
+        <p></p>  
       </section>
-      <img class="footer-logo logo" src="../img/logo.png" alt="logo" />
+      <section class="footer-logo">
+        <img class="logo" src="../img/logo.png" alt="logo" />
+      </section>
       <section class="footer-redes">
         <a href="https://www.facebook.com/">
           <i class="fa-brands fa-facebook"></i>
@@ -143,7 +144,8 @@
         <a href="https://www.instagram.com/">
           <i class="fa-brands fa-instagram"></i>
         </a>
-      </section>
     </section>
   </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
 </html>

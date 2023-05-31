@@ -1,6 +1,7 @@
 /*fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 * {
   padding: 0;
@@ -92,16 +93,12 @@ body {
 
 .menu .icono-login {
   font-size: x-large;
+  text-align: center;
+  margin-left: 0.5rem;
 }
 
-.menu .drop ul li a {
+.drop ul li a {
   color: #000 !important;
-}
-
-@media (max-width: 991px) {
-  .menu .drop {
-    width: 100px !important;
-  }
 }
 
 /*-----------------------*/
@@ -130,6 +127,7 @@ body {
   transition: border-radius 0.5s ease-in-out;
 }
 .cart-card:hover {
+  color: #ff00954f;
   border: solid;
   border-radius: 0%;
 }
@@ -158,29 +156,29 @@ body {
 /*-----------------------*/
 
 /*footer-----------------*/
-.footer-container {
-  text-align: center;
-  background-color: #101010;
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #fff;
   padding: 0.8rem;
   border-top: 0.2rem solid transparent;
   border-image: linear-gradient(0.25turn, #fff, #ff0093, #000);
   border-image-slice: 1;
-  width: 100%;
-}
-
-.footer {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.25s;
-  margin-right: 1.3rem;
-}
-.footer-logo {
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 0.5rem;
+  margin: 0rem 1rem;
+  align-items: center;
 }
 .footer-redes {
-  border: none;
+  justify-self: end;
+}
+.footer-logo {
+  justify-self: center;
+}
+
+.footer-logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
 }
 
 .footer-redes a {
@@ -188,10 +186,39 @@ body {
   color: #fff;
   text-decoration: none;
   padding: 0 0.25rem;
+  transition: filter 0.25s;
 }
 
 .footer-redes a:hover {
-  color: #ff0093;
+  filter: brightness(75%);
+}
+
+.footer-copy p::before {
+  content: "© 2023 Cineapolis, Tomás Zappalá \a Página sin fines de lucro ni comerciales";
+  white-space: pre;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    .footer-copy,
+    .footer-logo,
+    .footer-redes {
+      justify-self: center;
+      margin-top: 1rem;
+    }
+    .footer-redes a {
+      padding: 0 1.25rem;
+    }
+    .footer-copy {
+      text-align: center;
+    }
+    .footer-copy p::before {
+      content: "© 2023 Cineapolis, Tomás Zappalá";
+    }
+  }
 }
 /*-----------------------*/
 
@@ -225,19 +252,101 @@ body {
 .newsletter-container {
   background-color: #101010;
   color: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .newsletter {
-  padding: 0 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(47, 47, 47);
+  height: 7.5rem;
+  width: 100%;
+}
+
+.newsletter-titulo {
+  font-size: xx-large;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0rem 0rem 3rem 2rem;
+  text-decoration: underline;
+  font-weight: bold;
+  opacity: 85%;
+}
+
+.newsletter-subtitulo {
+  font-size: x-large;
+  font-family: monospace;
+  margin: 3rem 2rem 0rem 0rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.newsletter-item {
+  display: flex;
+  width: 40%;
+  margin: 0rem 3rem;
+}
+
+.newsletter-btn {
+  width: 35%;
+  border-top-right-radius: 2.5%;
+  border-bottom-right-radius: 2.5%;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
 }
 
 .newsletter-imput {
-  padding: 0.5rem 0 0.5rem 0.5rem;
-  width: 30%;
-  border: none;
-  border-radius: 0.2rem;
+  width: 65%;
+  padding: .5rem;
 }
+
+.item {
+  height: 2.5rem;
+  border: none;
+}
+
+@media (max-width: 768px){
+  .newsletter {
+    flex-direction: column;
+  }
+  .newsletter h3{
+    display: none;
+  }
+  .newsletter .newsletter-item{
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+  }
+  .newsletter h1{
+    padding: 0;
+    margin: 1rem 0 0 0;
+    font-size: x-large;
+  }
+  .newsletter-item .newsletter-btn{
+    font-size: medium;
+    width: 55%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px){
+  .newsletter {
+    flex-direction: column;
+  }
+  .newsletter h3{
+    display: none;
+  }
+  .newsletter .newsletter-item{
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+  }
+  .newsletter h1{
+    padding: 0;
+    margin: 1rem 0 0 0;
+    font-size: x-large;
+  }
+  .newsletter-item .newsletter-btn{
+    font-size: large;
+    width: 45%;
+  }
+}
+
 /*-----------------------*/
 /*Pelicula---------------*/
 .pelicula-container {
@@ -286,20 +395,27 @@ body {
 }
 /*-----------------------*/
 /*Promo cartelera--------*/
-.promo-container {
-  background-color: #101010;
+.promo{
+  background-color: #000000;
   color: #fff;
-  padding: 1rem;
+  padding: 3rem !important;
+  height: 22rem !important;
+  border-top: solid;
+  border-color: #4842ff;
+  margin: 2rem;
 }
 
-.promo {
-  padding: 1rem;
+.promo img{
+  height: 15rem !important;
+  width: 15rem !important;
 }
 
-.promo-container li {
+.promo li {
   list-style: none;
   padding: 0.25rem 0 0 0.25rem;
 }
+
+
 /*-----------------------*/
 /*Estrenos---------------*/
 .estrenos-peliulas-container {
