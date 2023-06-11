@@ -1,7 +1,7 @@
 /*fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
 * {
   padding: 0;
@@ -14,36 +14,27 @@ body {
   background-color: #101010;
 }
 
+.header {
+  padding: 0rem 1rem;
+}
+
 .logo {
   width: 2rem;
   height: 2rem;
   border-radius: 1rem;
   border: none;
 }
-/*TAMAÑAO PARA LA IMAGENES DEFAULT DE LA PRIMERA PREENTREGA*/
-.tamaño-imagenes-pe {
-  height: 30rem;
-  width: 20rem;
-}
 
 /*Titulos y subtitulos del sistema*/
 .titulo {
   font-size: x-large;
   text-transform: uppercase;
-  padding: 0.5rem;
   font-family: "Roboto", sans-serif;
 }
 
 .subtitulo {
   font-size: large;
   text-transform: uppercase;
-  padding: 0.3rem;
-  font-family: "Roboto", sans-serif;
-}
-
-.subtitulo2 {
-  font-size: medium;
-  color: gray;
   font-family: "Roboto", sans-serif;
 }
 /*---------------------------------*/
@@ -117,7 +108,6 @@ body {
   background-color: #ff0085 !important;
 }
 /*-----------------------*/
-
 /*----cartelera----------*/
 .cart-card {
   width: 18rem;
@@ -154,7 +144,6 @@ body {
   overflow: hidden;
 }
 /*-----------------------*/
-
 /*footer-----------------*/
 
 .footer {
@@ -234,149 +223,284 @@ body {
 
 /*Proximos estrenos------*/
 .proximos-estrenos-container {
-  background-color: #101010;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
-.proximos-estrenos {
-  padding: 1rem;
-}
-
-.proximos-estrenos-iten img {
-  border-radius: 0.5rem;
-}
-/*-----------------------*/
-
-/*Newsletter-------------*/
-.newsletter-container {
-  background-color: #101010;
-  color: #fff;
-  padding: 1.5rem;
-}
-.newsletter {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(47, 47, 47);
-  height: 7.5rem;
+  flex-direction: column;
+  justify-content: center;
+  height: 26rem;
   width: 100%;
 }
 
-.newsletter-titulo {
-  font-size: xx-large;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0rem 0rem 3rem 2rem;
-  text-decoration: underline;
-  font-weight: bold;
-  opacity: 85%;
-}
-
-.newsletter-subtitulo {
-  font-size: x-large;
-  font-family: monospace;
-  margin: 3rem 2rem 0rem 0rem;
-  font-style: italic;
-  text-align: center;
-}
-
-.newsletter-item {
+.proximos-estrenos {
   display: flex;
-  width: 40%;
-  margin: 0rem 3rem;
+  height: 22rem;
+  margin: 0rem 6%;
+  padding: 0rem 2rem;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 0.005rem;
+  border-color: #ff0085;
 }
 
-.newsletter-btn {
-  width: 35%;
-  border-top-right-radius: 2.5%;
-  border-bottom-right-radius: 2.5%;
-  border-top-left-radius: 0%;
-  border-bottom-left-radius: 0%;
+.proximos-estrenos-item {
+  padding: 1rem 0rem;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  transition: all 0.35s ease-in;
+}
+.proximos-estrenos-item-ultimo {
+  padding: 1rem 0rem;
+  display: flex;
+  object-fit: cover;
+  transition: all 0.35s ease-in;
+}
+.proximos-estrenos-item img,
+.proximos-estrenos-item-ultimo img {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+.proximos-estrenos-item-ultimo:hover {
+  cursor: pointer;
+}
+.proximos-estrenos-item:hover {
+  cursor: pointer;
+  overflow: visible;
+  width: 3rem;
 }
 
-.newsletter-imput {
-  width: 65%;
-  padding: .5rem;
+.proximos-estrenos-item:not(:hover),
+.proximos-estrenos-item-ultimo:not(:hover) {
+  transition: none;
 }
 
-.item {
-  height: 2.5rem;
-  border: none;
+.proximos-estrenos-item:hover img,
+.proximos-estrenos-item-ultimo:hover img {
+  opacity: 1;
+  position: relative;
+  height: 105%;
+  top: -2.5%;
+  z-index: 1;
 }
 
-@media (max-width: 768px){
-  .newsletter {
-    flex-direction: column;
+/* @media (min-width: 577px) and (max-width: 768px) {
+  .proximos-estrenos {
+    margin: 0rem 4.9rem !important;
   }
-  .newsletter h3{
+  .estrenos-md {
     display: none;
   }
-  .newsletter .newsletter-item{
-    padding: 0;
-    margin: 0 0 1.5rem 0;
-  }
-  .newsletter h1{
-    padding: 0;
-    margin: 1rem 0 0 0;
-    font-size: x-large;
-  }
-  .newsletter-item .newsletter-btn{
-    font-size: medium;
-    width: 55%;
-  }
 }
-@media (min-width: 769px) and (max-width: 1200px){
-  .newsletter {
-    flex-direction: column;
+
+@media (max-width: 576px) {
+  .proximos-estrenos {
+    margin: 0rem 9.7rem !important;
   }
-  .newsletter h3{
+  .estrenos-sm {
     display: none;
   }
-  .newsletter .newsletter-item{
-    padding: 0;
-    margin: 0 0 1.5rem 0;
-  }
-  .newsletter h1{
-    padding: 0;
-    margin: 1rem 0 0 0;
-    font-size: x-large;
-  }
-  .newsletter-item .newsletter-btn{
-    font-size: large;
-    width: 45%;
-  }
+} */
+/* @media (min-width: 576px) .container, .container-sm {
+  max-width: 540px;
+} */
+
+.proximos-estrenos-subtitulo {
+  margin-top: 1rem;
+  text-align: center;
+  color: #fff;
 }
 
 /*-----------------------*/
-/*Pelicula---------------*/
-.pelicula-container {
+
+/*Newsletter-------------*/
+
+.newsletter-container {
   background-color: #101010;
   color: #fff;
+  padding-bottom: 0.3rem;
 }
-.pelicula-titulo {
+.newsletter {
+  background-image: url(../img/fondo-newsletter.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  border-top-left-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+}
+.newsletter-titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.15rem;
+  text-shadow: 0.15rem 0.15rem #000;
+}
+.newsletter-subtitulo {
   text-align: center;
-  padding: 1rem 0 0 0;
+  color: #fff;
+  font-size: x-large;
 }
-.pelicula {
-  padding: 1rem;
-  width: 20rem;
+.newsletter-subscribe .newsletter-form input {
+  background: none;
+  border: 0.01rem solid #fff;
+  border-radius: 1.875rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  height: 3.5625rem;
+  margin-right: 1.0625rem;
+  padding-left: 2.1875rem;
+  width: 70%;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
 }
-.pelicula-sinopsis {
-  padding: 1rem 1rem;
+.newsletter-subscribe .newsletter-form input:focus {
+  border: transparent;
+  outline: none;
+  box-shadow: 0 0.2rem 1rem 0.2rem #101010;
+}
+.newsletter-subscribe .newsletter-form button {
+  background-color: #fff;
+  border: none;
+  border-radius: 1.875rem;
+  color: #000;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1.125rem 2.875rem;
+  transition: all 0.3s ease 0s;
+}
+.newsletter-subscribe .newsletter-form button:hover {
+  opacity: 70%;
+  box-shadow: 0 0.2rem 1rem 0.2rem #101010;
+}
+.newsletter-subscribe .newsletter-form button i {
+  font-size: 1.125rem;
+  padding-left: 0.3125rem;
 }
 
-.pelicula-fechas-disponibles {
-  padding: 1rem;
+@media (992px <= width <= 1400px) {
+  .newsletter-titulo {
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+  }
+  .newsletter-subtitulo {
+    font-size: 1.4rem;
+  }
+  .newsletter-subscribe .newsletter-form input {
+    width: 75%;
+  }
+  .newsletter-subscribe .newsletter-form button {
+    margin: 0;
+    padding: 1.125rem 2rem;
+  }
+  .newsletter-subscribe .newsletter-form button i {
+    text-align: center;
+    padding: 0rem;
+  }
+}
+@media (768px <= width <= 991px) {
+  .newsletter-titulo {
+    font-size: 1.2rem;
+    letter-spacing: 0.03rem;
+    text-align: center;
+  }
+  .newsletter-subtitulo {
+    font-size: 1.2rem;
+  }
+  .newsletter-subscribe .newsletter-form input {
+    width: 65%;
+  }
+  .newsletter-subscribe .newsletter-form button {
+    margin: 0;
+    padding: 1.125rem 2rem;
+  }
+  .newsletter-subscribe .newsletter-form button i {
+    text-align: center;
+    padding: 0rem;
+  }
+}
+@media (width <= 767px) {
+  .newsletter-titulo {
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+  }
+  .newsletter-subtitulo {
+    font-size: 1.1rem;
+  }
+  .newsletter-subscribe .newsletter-form input {
+    width: 75%;
+  }
+  .newsletter-subscribe .newsletter-form button {
+    margin: 0;
+    padding: 1.125rem 2rem;
+  }
+  .newsletter-subscribe .newsletter-form button i {
+    text-align: center;
+    padding: 0rem;
+  }
+}
+/*-----------------------*/
+/*Pelicula---------------*/
+.pelicula-container {
+  display: grid;
+  box-sizing: border-box;
+  align-items: start;
+  justify-items: center;
+  background-color: #101010;
+  color: #fff;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(12, 2fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 1rem auto;
+  max-width: 70rem;
+  width: 100%;
+}
+
+.pelicula {
+  grid-column-end: span 5;
+  grid-row-end: span 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.pelicula img {
+  width: 67%;
+}
+
+.pelicula-calendario {
+  grid-column-start: 7;
+  grid-column-end: span 4;
 }
 
 .pelicula-trailer {
-  margin-left: 70%;
-  padding: 1rem 0 0.5rem 0;
+  grid-column-start: 7;
+  grid-column-end: span 6;
 }
-.pelicula-trailer h2 {
+.pelicula-titulo {
+  width: 67%;
   text-align: center;
-  padding-bottom: 0.5rem;
 }
+.pelicula-subtitulo {
+  font-weight: bold;
+  text-align: left;
+}
+.pelicula-descripcion {
+  padding: 1rem 0rem;
+}
+
+.pelicula-descripcion p {
+  margin: 0;
+}
+
 /*-----------------------*/
 /*Cartelera--------------*/
 .cartelera-container {
@@ -395,7 +519,7 @@ body {
 }
 /*-----------------------*/
 /*Promo cartelera--------*/
-.promo{
+.promo {
   background-color: #000000;
   color: #fff;
   padding: 3rem !important;
@@ -405,7 +529,7 @@ body {
   margin: 2rem;
 }
 
-.promo img{
+.promo img {
   height: 15rem !important;
   width: 15rem !important;
 }
@@ -415,21 +539,19 @@ body {
   padding: 0.25rem 0 0 0.25rem;
 }
 
-
 /*-----------------------*/
 /*Estrenos---------------*/
-.estrenos-peliulas-container {
-  background-color: #101010;
-  color: #fff;
+.estrenos-peliculas-container {
+  color: #fff !important;
+  background-color: #101010 !important;
 }
-
+.estrenos-peliculas-titulo {
+  text-align: center;
+}
 .estrenos-peliculas-iten {
-  padding: 1rem;
-  width: 25rem;
-}
-
-.estrenos-peliculas-iten p {
-  padding: 2rem 0 1rem 0;
+  background-color: #101010 !important;
+  color: #fff !important;
+  border: none;
 }
 
 .estrenos-peliculas-iten a {
@@ -439,7 +561,43 @@ body {
 .estrenos-peliculas-iten h2 {
   color: #ff0093;
 }
+
+.card-title-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.-b-text-undexpanded {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.-b-expander {
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.cortar {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.fila-estrenos {
+  margin: 0.5rem 0;
+  border-top: 0.02rem solid #ff0085;
+}
+.fila-estrenos .estrenos-peliculas-titulo {
+  padding: 1.5rem 0 1rem 0;
+}
 /*-----------------------*/
+
 /*Formularios login y registro*/
 .formulario-login-container {
   background-color: #101010;
