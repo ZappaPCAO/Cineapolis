@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+/*declaracion de variables*/
+$bgColor: #101010 !important;
+$primaryColor: #CE1793 !important;
+$seccondaryColor: #8732CD !important;
+$titleFont:  upperase large, "Roboto", sans-serif !important;
+$subtitleFont: uppercase medium, "Roboto", sans-serif !important;
+$borderDegrade: linear-gradient(to left, #fff, #ff0093, #000) !important;
+
+/*declaracion de mixims*/
+@mixin sizes ($height, $width) {
+    width: $width;
+    height: $height;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+}
+/*MENU*/
+.menu{
+    background-color: $bgColor;
+    padding: 0.5rem 1.5rem !important;
+    border-bottom: 0.2rem solid transparent !important;
+    border-image: $borderDegrade;
+    @include sizes(100%, 100% );
+    a{
+        color: white;
+        text-transform: uppercase !important;
+        transition: color 0.25s !important;
+        &.active{
+            color: $primaryColor;
+        }
+        &:hover{
+            color: $seccondaryColor 
+        }
+    }
+    .menu-logo{
+        @include sizes(3rem, 3rem);
+    }
+    .icono-login{
+        font-size: x-large;
+        text-align: center;
+        margin-left: 0.5rem;
+    }
+}
+/*----*/
+
+/**/
