@@ -1,23 +1,28 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-/*declaracion de variables*/
-/*declaracion de mixims*/
 * {
   padding: 0;
   margin: 0;
-  border: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
   font-family: "Poppins", sans-serif;
 }
 
-/*MENU*/
+body {
+  background-color: #101010 !important;
+}
+
+/*declaracion de variables*/
+/*declaracion de mixims*/
 .menu {
   background-color: #101010 !important;
   padding: 0.5rem 1.5rem !important;
   border-bottom: 0.2rem solid transparent !important;
-  border-image: linear-gradient(to left, #fff, #ff0093, #000) !important;
-  width: 100%;
-  height: 100%;
+  border-image: linear-gradient(0.25turn, #fff, #ff0093, #000) !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 .menu a {
   color: white;
@@ -31,8 +36,8 @@
   color: #8732CD !important;
 }
 .menu .menu-logo {
-  width: 3rem;
-  height: 3rem;
+  width: 3rem !important;
+  height: 3rem !important;
 }
 .menu .icono-login {
   font-size: x-large;
@@ -40,6 +45,105 @@
   margin-left: 0.5rem;
 }
 
-/*----*/
+.d-item {
+  width: default !important;
+  height: 45rem !important;
+}
+.d-item .d-img {
+  width: 100% !important;
+  height: 100% !important;
+}
+.d-item .d-indicators button {
+  background-color: #CE1793 !important;
+}
+
+.cart-card {
+  width: 18rem !important;
+  height: default !important;
+  border: none;
+  background-color: #101010 !important;
+  border-radius: 50%;
+  transition: border-radius 0.5s ease-in-out;
+}
+.cart-card:hover {
+  border: 0.1rem solid #CE1793 !important;
+  border-radius: 0%;
+}
+.cart-card img {
+  padding-top: 0.5rem !important;
+  border-top-left-radius: 3.5% !important;
+  border-top-right-radius: 3.5% !important;
+}
+.cart-card .cart-title-movie {
+  border-bottom: 0.1rem solid #CE1793 !important;
+  background-color: #8732CD !important;
+  padding: 0.5rem !important;
+  width: 100% !important;
+  height: default !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #fff;
+  padding: 0.5rem !important;
+  border-top: 0.2rem solid transparent;
+  border-image: linear-gradient(0.25turn, #fff, #ff0093, #000) !important;
+  border-image-slice: 1;
+  margin: 0rem 1rem;
+  align-items: center;
+}
+.footer .footer-redes {
+  justify-self: end;
+}
+.footer .footer-redes a {
+  font-size: x-large;
+  color: #fff;
+  padding: 0.5rem !important;
+  transition: filter 0.25s linear;
+}
+.footer .footer-redes a:hover {
+  filter: brightness(75%);
+}
+.footer .footer-logo {
+  justify-self: center;
+}
+.footer .footer-logo img {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border-radius: 0.75rem;
+}
+.footer .footer-copy p::before {
+  content: "© 2023 Cineapolis, Tomás Zappalá \aPágina sin fines de lucro ni comerciales";
+  white-space: pre;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .footer .footer-logo {
+    justify-self: center;
+    margin-top: 1rem;
+  }
+  .footer .footer-copy {
+    justify-self: center;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .footer .footer-copy p::before {
+    content: "© 2023 Cineapolis, Tomás Zappalá";
+  }
+  .footer .footer-redes {
+    justify-self: center;
+    margin-top: 1rem;
+  }
+  .footer .footer-redes a {
+    padding: 0 1.235rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

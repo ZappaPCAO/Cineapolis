@@ -1,0 +1,11 @@
+
+/*declaracion de mixims*/
+@mixin sizes ($height, $width) {
+    width: $width !important;
+    height: $height !important;
+}
+
+@mixin top-radius($porc) {
+    border-top-left-radius: $porc !important;
+    border-top-right-radius: $porc !important;
+}

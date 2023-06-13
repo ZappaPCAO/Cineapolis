@@ -1,0 +1,11 @@
+.d-item{
+    @include sizes(45rem, default);
+    .d-img{
+        @include sizes(100%, 100%);
+    }
+    .d-indicators{
+        button{
+            background-color: $primaryColor;
+        }
+    }
+}

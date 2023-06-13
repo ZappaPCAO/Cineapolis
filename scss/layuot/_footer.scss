@@ -1,0 +1,59 @@
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: #fff;
+    padding: $p-default;
+    border-top: 0.2rem solid transparent;
+    border-image: $borderDegrade;
+    border-image-slice: 1;
+    margin: 0rem 1rem;
+    align-items: center;
+    .footer-redes{
+        justify-self: end;
+        a{
+            font-size: x-large;
+            color:#fff;
+            padding: $p-default;
+            transition: filter 0.25s linear;
+
+            &:hover{
+                filter: brightness(75%);
+            }
+        }
+    }
+    .footer-logo{
+        justify-self: center;
+        img{
+            @include sizes(2.5rem, 2.5rem);
+            border-radius: 0.75rem;
+        }
+    }
+    .footer-copy p::before{
+        content: "© 2023 Cineapolis, Tomás Zappalá \a Página sin fines de lucro ni comerciales";
+        white-space: pre;
+    }
+    @include tablet{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        .footer-logo {
+            justify-self: center;
+            margin-top: 1rem;
+        }
+        .footer-copy {
+            justify-self: center;
+            margin-top: 1rem;
+            text-align: center;
+            p::before{
+                content: "© 2023 Cineapolis, Tomás Zappalá";
+            }
+        }
+        .footer-redes{
+            justify-self: center;
+            margin-top: 1rem;
+            a{
+                padding: 0 1.235rem;
+            }
+        }
+    }
+}
