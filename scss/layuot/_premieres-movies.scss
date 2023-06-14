@@ -1,0 +1,19 @@
+.estrenos-peliculas-container {
+    color: #fff !important;
+    background-color: $bgColor;
+
+    .estrenos-peliculas{
+        .estrenos-peliculas-iten{
+            background-color: $bgColor;
+            color: #fff !important;
+            border: none;
+            a{
+                color: $primaryColor;
+                text-decoration: none;
+            }
+            h2{
+                color: $primaryColor;
+            }
+        }
+    }
+}

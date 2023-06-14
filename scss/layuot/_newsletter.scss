@@ -1,0 +1,138 @@
+.newsletter-container {
+    background-color: $bgColor;
+    color: #fff;
+    padding-bottom: 0.3rem;
+
+    .newsletter{
+        background-image: url(../img/fondo-newsletter.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3rem;
+        border-top-left-radius: 6rem;
+        border-bottom-right-radius: 6rem;
+
+        .newsletter-titulo {
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.7rem;
+            letter-spacing: 0.15rem;
+            text-shadow: 0.15rem 0.15rem #000;
+        }
+        .newsletter-subtitulo {
+            text-align: center;
+            color: #fff;
+            font-size: x-large;
+        }
+        .newsletter-subscribe {            
+            .newsletter-form {
+                input {
+                    @include sizes(3.5625rem, 70%);                
+                    cursor: pointer;
+                    background: none;
+                    border: 0.01rem solid #fff;
+                    border-radius: 1.875rem;
+                    color: #fff;
+                    display: inline-block;
+                    font-size: 0.9375rem;
+                    font-weight: 300;                
+                    margin-right: 1.0625rem;
+                    padding-left: 2.1875rem;
+                    backdrop-filter: blur(5px);
+
+                    &:focus{
+                        border: transparent;
+                        outline: none;
+                        box-shadow: 0 0.2rem 1rem 0.2rem #101010;
+                    }
+                }
+                button{
+                    background-color: #fff;
+                    border: none;
+                    border-radius: 1.875rem;
+                    color: #000;
+                    display: inline-block;
+                    font-size: 1.125rem;
+                    font-weight: 400;
+                    line-height: 1;
+                    padding: 1.125rem 1.5rem;
+                    transition: all 0.3s ease 0s;
+                    &:hover{
+                        opacity: 70%;
+                        box-shadow: 0 0.2rem 1rem 0.2rem #101010;
+                    }                    
+                } 
+            }
+        }
+        @include desktop{
+            .newsletter-titulo {
+                font-size: 1.4rem;
+                letter-spacing: 0.05rem;
+                text-align: center;
+            }
+            .newsletter-subtitulo {
+                font-size: 1.4rem;
+            }
+            .newsletter-subscribe{
+                .newsletter-form{
+                    input {
+                        @include sizes(default, 75%);
+                    }
+                    button {
+                        margin: 0; 
+                        i{
+                            text-align: center;   
+                        }             
+                    }
+                }
+            }          
+        }
+
+        @include tablet{
+            .newsletter-titulo {
+                font-size: 1.2rem;
+                letter-spacing: 0.03rem;
+                text-align: center;
+            }
+            .newsletter-subtitulo {
+                font-size: 1.2rem;
+            }
+            .newsletter-subscribe{
+                .newsletter-form{
+                    input {
+                        @include sizes(default, 65%);
+                    }
+                    button {
+                        margin: 0;
+                        i {
+                            text-align: center;
+                        }                        
+                    }
+                }
+            }                    
+        }
+
+        @include mobile{
+            .newsletter-titulo {
+                font-size: 1.1rem;
+                letter-spacing: 0.05rem;
+                text-align: center;
+            }
+            .newsletter-subtitulo {
+                font-size: 1.1rem;
+            }
+            .newsletter-subscribe{ 
+                .newsletter-form{ 
+                    input {
+                        @include sizes(default, 75%);
+                    }
+                    button {
+                        margin: 0;   
+                        i {
+                            text-align: center;                
+                        }            
+                    }            
+                }
+            }
+        }
+    }
+}

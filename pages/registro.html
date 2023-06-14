@@ -54,80 +54,108 @@
       </div>
     </nav>
   </header> 
-    <section class="formulario-registro-container">
-      <form class="formulario-registro">
-        <h2 class="formulario-registro-subtitulo subtitulo">crear usuario</h2>
-        <hr />
-        <h3 class="formulario-registro-subtitulo2 subtitulo2">Registrate</h3>
-        <section class="formulario-registro-campo">
-          <label for="nombre">Nombre:</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            required
-            placeholder="Tomás"
-          />
-        </section>
-        <section class="formulario-registro-campo">
-          <label for="apellido">Apellido:</label>
-          <input
-            type="text"
-            id="apellido"
-            name="apellido"
-            required
-            placeholder="Perez"
-          />
-        </section>
-        <section class="formulario-registro-campo">
-          <label for="email">Correo electrónico:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="pedroperez@..."
-          />
-        </section>
-        <section class="formulario-registro-campo">
-          <label for="genero">Género:</label>
-          <select id="genero" name="genero" required>
-            <option value="">Selecciona una opción</option>
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-            <option value="otro">Otro</option>
-          </select>
-        </section>
-        <section class="formulario-registro-campo">
-          <label for="contraseña">Contraseña:</label>
-          <input
-            type="password"
-            id="contraseña"
-            name="contraseña"
-            minlength="6"
-            required
-            placeholder="*******"
-          />
-        </section>
-        <section class="formulario-registro-campo">
-          <label for="confirmar-contraseña">Confirmar contraseña:</label>
-          <input
-            type="password"
-            id="confirmar-contraseña"
-            name="confirmar-contraseña"
-            minlength="6"
-            required
-            placeholder="*******"
-          />
-        </section>
-        <section class="botones">
-          <button class="btn" type="submit">Registrarse</button>
-          <a class="formulario-registro-botones-login" href="login.html">¿Ya tienes cuenta? Logeate</a>
-        </section>
-      </form>
-    </section>
-    <footer class="footer">
-      <section class="footer-copy">
+  <section class="login-bg container w-75 mt-5 rounded shadow">
+    <div class="row align-items-stretch">        
+      <div class="col bg-white p-5 rounded">
+        <h1 class="titulo">Registrate</h1>
+        <!--LOGIN-->
+        <form action="#">
+          <div class="mb-4">
+            <label for="nombre">Nombre:</label>
+            <input
+              class="form-control"
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              placeholder="Tomás"
+            /></div>
+          <div class="mb-4"><label for="apellido">Apellido:</label>
+            <input class="form-control"
+              type="text"
+              id="apellido"
+              name="apellido"
+              required
+              placeholder="Perez"
+            /></div>
+          <div class="mb-4"><label for="email">Correo electrónico:</label>            
+            <input
+            class="form-control"
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="pedroperez@..."
+            /></div>
+          <div class="mb-4"><label for="genero">Género:</label>
+            <select id="genero" name="genero" required class="form-select">
+              <option value="">Selecciona una opción</option>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="otro">Otro</option>
+            </select></div>
+          <div class="mb-4"><label for="contraseña">Contraseña:</label>
+            <input class="form-control"
+              type="password"
+              id="contraseña"
+              name="contraseña"
+              minlength="6"
+              required
+              placeholder="*******"
+            /></div>
+          <div class="mb-4"><label for="confirmar-contraseña">Confirmar contraseña:</label>
+            <input
+            class="form-control"
+              type="password"
+              id="confirmar-contraseña"
+              name="confirmar-contraseña"
+              minlength="6"
+              required
+              placeholder="*******"
+            /></div>
+
+          <div class="d-grid">
+            <button type="submit" class="btn-system btn btn-primary">Iniciar Sesión</button>
+          </div>
+          <div class="my-3">
+            <span>No tienes cuenta? <a href="registro.html">Regístrate</a></span>
+            <br>
+            <span><a href="#">Olvide mi contraseña</a></span>
+          </div>
+        </form>
+        <!--Ingresar con redes sociales-->
+        <div class="container w-100 my-5">
+          <div class="row text-center">
+            <div class="col-12">Registrate con</div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-outline-primary w-100 my-1">
+                <div class="row align-items-center">
+                  <div class="col-2 d-none d-md-block">
+                    <img src="../img/facebook.png" width="16" alt="icon facebook">
+                  </div>
+                  <div class="col-12 col-md-10 text-center">Facebook</div>
+                </div>
+              </button>
+            </div>
+            <div class="col">
+              <button class="btn btn-outline-danger w-100 my-1">
+                <div class="row align-items-center">
+                  <div class="col-2 d-none d-md-block">
+                    <img src="../img/google.png" width="16" alt="icon google">
+                  </div>
+                  <div class="col-12 col-md-10 text-center">Google</div>
+                </div>
+              </button>
+            </div>              
+          </div>
+        </div>
+      </div>
+    </div>      
+  </section>  
+  <footer class="footer">
+    <section class="footer-copy">
         <!-- A esta etiqueta P la completo con css para poder cambiar al contenido que quiero dependiendo la pantalla-->
         <p></p>  
       </section>
@@ -147,5 +175,5 @@
     </section>
   </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>

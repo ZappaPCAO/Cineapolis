@@ -1,0 +1,79 @@
+.proximos-estrenos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include sizes(26rem, 100%);
+
+    .proximos-estrenos {
+        display: flex;
+        @include sizes(22rem, default);
+        margin: 0 6%;
+        padding: $p-default;
+        border-top: solid;
+        border-bottom: solid;
+        border-width: 0.005rem;
+        border-color: #ff0085;
+        .proximos-estrenos-item {
+            display: flex;
+            
+            object-fit: cover;
+            overflow: hidden;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            @include sizes(default, 0);
+            transition: all 0.35s ease-in;
+
+            &:hover {
+                cursor: pointer;
+                overflow: visible;
+                width: 3rem;
+
+                img {
+                    opacity: 1;
+                    position: relative;
+                    height: 105%;
+                    top: -2.5%;
+                    z-index: 1;
+                    border-radius: 2.5%;
+                    box-shadow: 0 0 5rem 0.5rem $bgColor;
+                }
+            }
+            &:not(:hover) {
+                transition: none;
+            }
+            img {
+                opacity: 0.5;
+                transition: all 0.5s ease;
+            }
+        }
+        .proximos-estrenos-item-ultimo {            
+            display: flex;
+            transition: all 0.35s ease-in;
+            
+            &:not(:hover) {
+                transition: none;
+            }
+            &:hover {
+                cursor: pointer;
+                img {
+                    opacity: 1;
+                    position: relative;
+                    height: 105%;
+                    top: -2.5%;
+                    z-index: 1;
+                    border-radius: 2.5%;
+                    box-shadow: 0 0 5rem 0.5rem $bgColor;
+                }
+            }
+            img {
+                opacity: 0.5;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+    .proximos-estrenos-subtitulo {
+        margin-top: 1rem;
+        text-align: center;
+        color: #fff;
+    }
+}

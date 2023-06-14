@@ -1,0 +1,16 @@
+.promo {
+    background-color: #000000;
+    color: #fff;
+    padding: 3rem !important;
+    @include sizes(22rem, default);  
+    border-top: solid;
+    border-color: #4842ff;
+    margin: 2rem;
+    img{
+        @include sizes(15rem, 15rem);
+    }
+    li{
+        list-style: none;
+        padding:  0.25rem 0 0 0.25rem;
+    }
+}

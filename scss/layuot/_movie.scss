@@ -1,0 +1,135 @@
+.pelicula-container {
+    display: grid;
+    box-sizing: border-box;
+    align-items: start;
+    justify-items: center;
+    background-color: #101010;
+    color: #fff;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(12, 2fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 1rem auto;
+    max-width: 70rem;
+    @include sizes(default, 100%);
+    padding:  0.5rem 1.5rem;
+
+    .pelicula {
+        grid-column-end: span 5;
+        grid-row-end: span 2;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+        .pelicula-titulo {
+            width: 67%;
+            text-align: center;
+        }
+
+        img {
+            width: 67%;
+        }
+        .pelicula-descripcion {
+            padding: 1rem 0rem;
+            p {
+                margin: 0;
+            }
+        }
+        .peliula-sinopsis{
+            .pelicula-subtitulo {
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+        
+
+    }
+    .pelicula-calendario {
+        grid-column-start: 7;
+        grid-column-end: span 6;
+        @include sizes(60%, 90%);
+        text-align: center;
+        padding-bottom: $p-default;
+
+        .day-name{
+            font-weight: bold;
+            background-color: $bgColor;
+        }
+        ol{            
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            @include sizes(100%, 100%);
+            .first-day{
+                grid-column-start: 4;
+            }
+            padding: 0;
+            border: 0.1rem solid #fff;
+            li{
+                border: 0.1rem solid $seccondaryColor;
+                &:hover{
+                    color: $primaryColor;
+                    cursor: pointer;
+                }               
+            }
+        }
+    }
+    .pelicula-trailer {
+        @include sizes(90%, 100%);
+        grid-column-start: 7;
+        grid-column-end: span 6;
+        iframe{
+            @include sizes(100%, 100%)
+        }
+        text-align: center;
+    }
+    @include tablet{
+        .pelicula{
+            align-items: center;
+            grid-column-end: span 12;               
+        }
+        .pelicula-calendario{
+            @include sizes(90%, 90%);
+            align-items: center;
+            grid-column-start: 1;
+            grid-column-end: span 6;                
+        }
+        .pelicula-trailer{
+            @include sizes(90%, 90%);
+            align-items: center;
+            grid-column-start: 7;
+            grid-column-end: span 6;              
+        }
+        
+    }
+    @include mobile{
+        .pelicula-container{
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .pelicula{
+            align-items: center;
+            grid-column-end: span 12;                       
+        }
+        .pelicula-calendario{
+            @include sizes(100%, 100%);
+            align-items: center;
+            grid-column-start: 1;
+            grid-column-end: span 12;                      
+        }
+        .pelicula-trailer{   
+            @include sizes(140%, 100%);
+            margin-top: 1.5rem;
+            grid-column-start: 1;
+            grid-column-end: span 12;                    
+            align-items: center;
+            
+            iframe{
+                @include sizes(55%, 80%);
+            } 
+        }
+    }
+}
+
+
+

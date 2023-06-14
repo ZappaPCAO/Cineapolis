@@ -8,6 +8,12 @@
 @import './utilities/mixins';
 @import './utilities/media--queris';
 
+//Components
+@import './components/button';
+@import './components/logo';
+@import './components/subtitle';
+@import './components/title';
+
 //Layout
 @import './layuot/menu';
 @import './layuot/slider';
@@ -18,4 +24,4 @@
 @import './layuot/premieres';
 @import './layuot/promotion';
 
-//Components
+

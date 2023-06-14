@@ -16,6 +16,39 @@ body {
 
 /*declaracion de variables*/
 /*declaracion de mixims*/
+.btn-system {
+  background-color: #8732CD !important;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.75s;
+}
+.btn-system:hover {
+  opacity: 70%;
+  box-shadow: 0 0.2rem 1rem 0.2rem #101010;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.subtitulo {
+  font-size: large;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.titulo {
+  font-size: x-large;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
 .menu {
   background-color: #101010 !important;
   padding: 0.5rem 1.5rem !important;
@@ -144,6 +177,358 @@ body {
   .footer .footer-redes a {
     padding: 0 1.235rem;
   }
+}
+
+.pelicula-container {
+  display: grid;
+  box-sizing: border-box;
+  align-items: start;
+  justify-items: center;
+  background-color: #101010;
+  color: #fff;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(12, 2fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 1rem auto;
+  max-width: 70rem;
+  width: 100% !important;
+  height: default !important;
+  padding: 0.5rem 1.5rem;
+}
+.pelicula-container .pelicula {
+  grid-column-end: span 5;
+  grid-row-end: span 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.pelicula-container .pelicula .pelicula-titulo {
+  width: 67%;
+  text-align: center;
+}
+.pelicula-container .pelicula img {
+  width: 67%;
+}
+.pelicula-container .pelicula .pelicula-descripcion {
+  padding: 1rem 0rem;
+}
+.pelicula-container .pelicula .pelicula-descripcion p {
+  margin: 0;
+}
+.pelicula-container .pelicula .peliula-sinopsis .pelicula-subtitulo {
+  font-weight: bold;
+  text-align: left;
+}
+.pelicula-container .pelicula-calendario {
+  grid-column-start: 7;
+  grid-column-end: span 6;
+  width: 90% !important;
+  height: 60% !important;
+  text-align: center;
+  padding-bottom: 0.5rem !important;
+}
+.pelicula-container .pelicula-calendario .day-name {
+  font-weight: bold;
+  background-color: #101010 !important;
+}
+.pelicula-container .pelicula-calendario ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0;
+  border: 0.1rem solid #fff;
+}
+.pelicula-container .pelicula-calendario ol .first-day {
+  grid-column-start: 4;
+}
+.pelicula-container .pelicula-calendario ol li {
+  border: 0.1rem solid #8732CD !important;
+}
+.pelicula-container .pelicula-calendario ol li:hover {
+  color: #CE1793 !important;
+  cursor: pointer;
+}
+.pelicula-container .pelicula-trailer {
+  width: 100% !important;
+  height: 90% !important;
+  grid-column-start: 7;
+  grid-column-end: span 6;
+  text-align: center;
+}
+.pelicula-container .pelicula-trailer iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+@media screen and (max-width: 768px) {
+  .pelicula-container .pelicula {
+    align-items: center;
+    grid-column-end: span 12;
+  }
+  .pelicula-container .pelicula-calendario {
+    width: 90% !important;
+    height: 90% !important;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+  }
+  .pelicula-container .pelicula-trailer {
+    width: 90% !important;
+    height: 90% !important;
+    align-items: center;
+    grid-column-start: 7;
+    grid-column-end: span 6;
+  }
+}
+@media screen and (max-width: 576px) {
+  .pelicula-container .pelicula-container {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .pelicula-container .pelicula {
+    align-items: center;
+    grid-column-end: span 12;
+  }
+  .pelicula-container .pelicula-calendario {
+    width: 100% !important;
+    height: 100% !important;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: span 12;
+  }
+  .pelicula-container .pelicula-trailer {
+    width: 100% !important;
+    height: 140% !important;
+    margin-top: 1.5rem;
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    align-items: center;
+  }
+  .pelicula-container .pelicula-trailer iframe {
+    width: 80% !important;
+    height: 55% !important;
+  }
+}
+
+.newsletter-container {
+  background-color: #101010 !important;
+  color: #fff;
+  padding-bottom: 0.3rem;
+}
+.newsletter-container .newsletter {
+  background-image: url(../img/fondo-newsletter.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  border-top-left-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+}
+.newsletter-container .newsletter .newsletter-titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.15rem;
+  text-shadow: 0.15rem 0.15rem #000;
+}
+.newsletter-container .newsletter .newsletter-subtitulo {
+  text-align: center;
+  color: #fff;
+  font-size: x-large;
+}
+.newsletter-container .newsletter .newsletter-subscribe .newsletter-form input {
+  width: 70% !important;
+  height: 3.5625rem !important;
+  cursor: pointer;
+  background: none;
+  border: 0.01rem solid #fff;
+  border-radius: 1.875rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  margin-right: 1.0625rem;
+  padding-left: 2.1875rem;
+  backdrop-filter: blur(5px);
+}
+.newsletter-container .newsletter .newsletter-subscribe .newsletter-form input:focus {
+  border: transparent;
+  outline: none;
+  box-shadow: 0 0.2rem 1rem 0.2rem #101010;
+}
+.newsletter-container .newsletter .newsletter-subscribe .newsletter-form button {
+  background-color: #fff;
+  border: none;
+  border-radius: 1.875rem;
+  color: #000;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1.125rem 1.5rem;
+  transition: all 0.3s ease 0s;
+}
+.newsletter-container .newsletter .newsletter-subscribe .newsletter-form button:hover {
+  opacity: 70%;
+  box-shadow: 0 0.2rem 1rem 0.2rem #101010;
+}
+@media screen and (max-width: 991px) {
+  .newsletter-container .newsletter .newsletter-titulo {
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+  }
+  .newsletter-container .newsletter .newsletter-subtitulo {
+    font-size: 1.4rem;
+  }
+  .newsletter-container .newsletter .newsletter-subscribe .newsletter-form input {
+    width: 75% !important;
+    height: default !important;
+  }
+  .newsletter-container .newsletter .newsletter-subscribe .newsletter-form button {
+    margin: 0;
+  }
+  .newsletter-container .newsletter .newsletter-subscribe .newsletter-form button i {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .newsletter-container .newsletter .newsletter-titulo {
+    font-size: 1.2rem;
+    letter-spacing: 0.03rem;
+    text-align: center;
+  }
+  .newsletter-container .newsletter .newsletter-subtitulo {
+    font-size: 1.2rem;
+  }
+  .newsletter-container .newsletter .newsletter-subscribe .newsletter-form input {
+    width: 65% !important;
+    height: default !important;
+  }
+  .newsletter-container .newsletter .newsletter-subscribe .newsletter-form button {
+    margin: 0;
+  }
+  .newsletter-container .newsletter .newsletter-subscribe .newsletter-form button i {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .newsletter-container .newsletter .newsletter-titulo {
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+  }
+  .newsletter-container .newsletter .newsletter-subtitulo {
+    font-size: 1.1rem;
+  }
+  .newsletter-container .newsletter .newsletter-subscribe .newsletter-form input {
+    width: 75% !important;
+    height: default !important;
+  }
+  .newsletter-container .newsletter .newsletter-subscribe .newsletter-form button {
+    margin: 0;
+  }
+  .newsletter-container .newsletter .newsletter-subscribe .newsletter-form button i {
+    text-align: center;
+  }
+}
+
+.proximos-estrenos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100% !important;
+  height: 26rem !important;
+}
+.proximos-estrenos-container .proximos-estrenos {
+  display: flex;
+  width: default !important;
+  height: 22rem !important;
+  margin: 0 6%;
+  padding: 0.5rem !important;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 0.005rem;
+  border-color: #ff0085;
+}
+.proximos-estrenos-container .proximos-estrenos .proximos-estrenos-item {
+  display: flex;
+  object-fit: cover;
+  overflow: hidden;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 0 !important;
+  height: default !important;
+  transition: all 0.35s ease-in;
+}
+.proximos-estrenos-container .proximos-estrenos .proximos-estrenos-item:hover {
+  cursor: pointer;
+  overflow: visible;
+  width: 3rem;
+}
+.proximos-estrenos-container .proximos-estrenos .proximos-estrenos-item:hover img {
+  opacity: 1;
+  position: relative;
+  height: 105%;
+  top: -2.5%;
+  z-index: 1;
+  border-radius: 2.5%;
+  box-shadow: 0 0 5rem 0.5rem #101010 !important;
+}
+.proximos-estrenos-container .proximos-estrenos .proximos-estrenos-item:not(:hover) {
+  transition: none;
+}
+.proximos-estrenos-container .proximos-estrenos .proximos-estrenos-item img {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+.proximos-estrenos-container .proximos-estrenos .proximos-estrenos-item-ultimo {
+  display: flex;
+  transition: all 0.35s ease-in;
+}
+.proximos-estrenos-container .proximos-estrenos .proximos-estrenos-item-ultimo:not(:hover) {
+  transition: none;
+}
+.proximos-estrenos-container .proximos-estrenos .proximos-estrenos-item-ultimo:hover {
+  cursor: pointer;
+}
+.proximos-estrenos-container .proximos-estrenos .proximos-estrenos-item-ultimo:hover img {
+  opacity: 1;
+  position: relative;
+  height: 105%;
+  top: -2.5%;
+  z-index: 1;
+  border-radius: 2.5%;
+  box-shadow: 0 0 5rem 0.5rem #101010 !important;
+}
+.proximos-estrenos-container .proximos-estrenos .proximos-estrenos-item-ultimo img {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+.proximos-estrenos-container .proximos-estrenos-subtitulo {
+  margin-top: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.promo {
+  background-color: #000000;
+  color: #fff;
+  padding: 3rem !important;
+  width: default !important;
+  height: 22rem !important;
+  border-top: solid;
+  border-color: #4842ff;
+  margin: 2rem;
+}
+.promo img {
+  width: 15rem !important;
+  height: 15rem !important;
+}
+.promo li {
+  list-style: none;
+  padding: 0.25rem 0 0 0.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
