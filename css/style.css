@@ -77,6 +77,9 @@ body {
   text-align: center;
   margin-left: 0.5rem;
 }
+.menu .dropdown-menu a {
+  color: #000 !important;
+}
 
 .d-item {
   width: default !important;
@@ -529,6 +532,56 @@ body {
 .promo li {
   list-style: none;
   padding: 0.25rem 0 0 0.25rem;
+}
+
+.estrenos-peliculas-container {
+  color: #fff !important;
+  background-color: #101010 !important;
+}
+.estrenos-peliculas-container .fila-estrenos {
+  margin: 0.5rem 0;
+  border-top: 0.02rem solid #ff0085;
+}
+.estrenos-peliculas-container .fila-estrenos .estrenos-peliculas-titulo {
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+}
+.estrenos-peliculas-container .estrenos-peliculas-iten {
+  background-color: #101010 !important;
+  color: #fff !important;
+  border: none;
+}
+.estrenos-peliculas-container .estrenos-peliculas-iten a {
+  color: #CE1793 !important;
+  text-decoration: none;
+}
+.estrenos-peliculas-container .estrenos-peliculas-iten h2 {
+  color: #CE1793 !important;
+}
+.estrenos-peliculas-container .estrenos-peliculas-iten .card-body .card-title-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.estrenos-peliculas-container .estrenos-peliculas-iten .card-body .-b-text-undexpanded {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.estrenos-peliculas-container .estrenos-peliculas-iten .card-body .-b-expander {
+  cursor: pointer;
+  line-height: 1.5;
+}
+.estrenos-peliculas-container .estrenos-peliculas-iten .card-body .cortar {
+  width: 90% !important;
+  height: default !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

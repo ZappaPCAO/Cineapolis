@@ -1,9 +1,17 @@
 .estrenos-peliculas-container {
     color: #fff !important;
     background-color: $bgColor;
+    
+    .fila-estrenos {
+        margin: 0.5rem 0;
+        border-top: 0.02rem solid #ff0085;
 
-    .estrenos-peliculas{
-        .estrenos-peliculas-iten{
+        .estrenos-peliculas-titulo {
+            padding: 1.5rem 0 1rem 0;      
+            text-align: center;
+        }
+    }
+    .estrenos-peliculas-iten{
             background-color: $bgColor;
             color: #fff !important;
             border: none;
@@ -14,6 +22,31 @@
             h2{
                 color: $primaryColor;
             }
+            .card-body{
+                .card-title-text{
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin-top: 1.5rem;
+                }
+                .-b-text-undexpanded {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .-b-expander {
+                    cursor: pointer;
+                    line-height: 1.5;
+                }
+                .cortar {
+                    @include sizes(default, 90%);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+            }
         }
-    }
 }

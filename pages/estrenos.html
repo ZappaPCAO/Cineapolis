@@ -7,8 +7,12 @@
     <title>Cartelera-Cineapolis</title>
 
     <!--boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
 
     <!--css-->
     <link rel="stylesheet" href="../css/style.css" />
@@ -23,11 +27,24 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img class="menu-logo logo" src="../img/logo.png" alt="logo" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="../index.html"
+            ><img class="menu-logo logo" src="../img/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="navbar-collapse justify-content-end align-items-center" id="navbarScroll">
+          <div
+            class="navbar-collapse justify-content-end align-items-center"
+            id="navbarScroll"
+          >
             <ul class="navbar-nav navbar-nav-scroll">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">inicio</a>
@@ -36,155 +53,474 @@
                 <a class="nav-link" href="cartelera.html">cartelera</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">proximos estrenos</a>
+                <a class="nav-link active" aria-current="page" href="#"
+                  >proximos estrenos</a
+                >
               </li>
               <li class="nav-item">
                 <div class="drop dropdown d-inline-block justify-content-start">
-                  <a class="icono-login" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a
+                    class="icono-login"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     <i class="fa-solid fa-circle-user"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-lg-end">
-                    <li><a class="dropdown-item" href="login.html">ingresar</a></li>
-                    <li><a class="dropdown-item" href="registro.html">registrarse</a></li>
+                    <li>
+                      <a class="dropdown-item" href="login.html">ingresar</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="registro.html"
+                        >registrarse</a
+                      >
+                    </li>
                   </ul>
                 </div>
-              </li>              
+              </li>
             </ul>
-          </div>        
+          </div>
         </div>
       </nav>
     </header>
-  <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="d-indicators carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active" aria-label="Slide 3"></button>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="d-indicators carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          class="active"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item d-item">
+          <img
+            src="../img/carousel/back-to-the-future-slogan.jpg"
+            class="d-img d-block w-50 h-50"
+            alt="back to the future"
+          />
+        </div>
+        <div class="carousel-item d-item">
+          <img
+            src="../img/carousel/jur-park.jpg"
+            class="d-img d-block w-50 h-50"
+            alt="jurassic park"
+          />
+        </div>
+        <div class="carousel-item active d-item">
+          <img
+            src="../img/carousel/indiana-jones.jpg"
+            class="d-img d-block w-50 h-50"
+            alt="indiana jones"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span
+          class="prueba carousel-control-next-icon"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item d-item">
-        <img src="../img/carousel/back-to-the-future-slogan.jpg" class="d-img d-block w-50 h-50" alt="back to the future">
-      </div>
-      <div class="carousel-item d-item">
-        <img src="../img/carousel/jur-park.jpg" class="d-img d-block w-50 h-50" alt="jurassic park">
-      </div>
-      <div class="carousel-item active d-item">
-        <img src="../img/carousel/indiana-jones.jpg" class="d-img d-block w-50 h-50" alt="indiana jones">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="prueba carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-  </div>
 
-    <section class="estrenos-peliulas-container">
-      <section class="estrenos-peliculas">
-        <h1 class="titulo">Lunes, 8 de mayo de 2023</h1>
-        <section class="estrenos-peliculas-iten">
-          <a href="#">
+    <section class="estrenos-peliulas">
+      <div class="estrenos-peliculas-container container">
+        <div class="row fila-estrenos justify-content-around align-items-center">
+          <h1 class="estrenos-peliculas-titulo titulo">
+            Domingo, 11 de Junio
+          </h1>
+          <div class="card col-lg-3 col-md-6 col-sm-12 estrenos-peliculas-iten">
             <img
               src="../img/estrenos/guardianes-de-la-galaxia-vol3.jpg"
-              alt="guardianes-de-la-galaxia-vol3"
+              alt="guardianes de la galaxia vol3"
+              class="card-img-top"
             />
-          </a>
-          <h2 class="subtitulo">Guardianes de la galaxia. Vol.3</h2>
+            <div class="card-body">
+              <h2 class="card-title subtitulo">
+                Guardianes de la galaxia.
+              </h2>
+              <b>Origen: </b>Argentina
+              <br />
+              <p class="cortar"><b>Género: </b>Animación, Fantasía, Familia, Comedia, Romance </p>              
+              <b>Duración: </b>189 minutos
 
-          <b>Origen: </b>Argentina
-          <br />
-          <b>Género: </b>Animación, Fantasía, Familia, Comedia, Romance
-          <br />
-          <b>Duración</b>189 minutos
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-            molestias. Maiores voluptatum ex cum distinctio error, expedita
-            repudiandae ad accusamus dolore ipsam soluta iusto neque laboriosam
-            quibusdam, sequi quisquam sed!
-          </p>
+              <h5 class="card-title-text">sinopsis</h5>
+              <p
+                class="card-text -b-expander -b-text-undexpanded"
+                title="Expandir"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat, molestias. Maiores voluptatum ex cum distinctio error,
+                expedita repudiandae ad accusamus dolore ipsam soluta iusto
+                neque laboriosam quibusdam, sequi quisquam sed!
+              </p>
+              <a href="pelicula.html">Ver más</a>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-6 col-sm-12 estrenos-peliculas-iten">
+            <img
+              src="../img/estrenos/el-despertar.jpg"
+              alt="el despertar"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title subtitulo">El despertar</h2>
+              <b>Origen: </b>Brazil
+              <br />
+              <p class="cortar" title=""><b>Género: </b>Terror, romance</p>              
+              <b>Duración: </b>229 minutos
 
-          <a href="pelicula.html">Ver más</a>
-        </section>
-      </section>
-      <section class="estrenos-peliculas-iten">
-        <a href="#">
-          <img
-            src="../img/estrenos/sombras-de-un-crimen.jpg"
-            alt="sombras-de-un-crimen"
-          />
-        </a>
-        <h2 class="subtitulo">Sombras de un crimen</h2>
+              <h5 class="card-title-text">sinopsis</h5>
+              <p
+                class="card-text -b-expander -b-text-undexpanded"
+                title="Expandir"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id
+                mollitia nisi voluptatum nihil sit itaque temporibus officiis
+                porro, deleniti commodi suscipit fugit fuga cupiditate
+                voluptatibus accusamus, sapiente odio ea! Deserunt saepe minus
+                tenetur nobis consectetur, fugit fuga molestias libero optio eum
+                nulla delectus. Vel quae temporibus enim tempore aperiam culpa
+                debitis, soluta modi velit tenetur pariatur a libero saepe.
+              </p>
+              <a href="pelicula.html">Ver más</a>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-6 col-sm-12 estrenos-peliculas-iten">
+            <img
+              src="../img/estrenos/el-exorcista-del-papa.jpg"
+              alt="el exorcista del papa"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title subtitulo">El exorcista del papa</h2>
+              <b>Origen: </b>Inglaterra
+              <br />
+              <p class="cortar" title="Terror, Suspenso"><b>Género: </b>Terror, Suspenso </p>             
+              <b>Duración: </b>309 minutos
 
-        <b>Origen: </b>Argentina
-        <br />
-        <b>Género: </b>Animación, Fantasía, Familia, Comedia, Romance
-        <br />
-        <b>Duración</b>189 minutos
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-          molestias. Maiores voluptatum ex cum distinctio error, expedita
-          repudiandae ad accusamus dolore ipsam soluta iusto neque laboriosam
-          quibusdam, sequi quisquam sed!
-        </p>
+              <h5 class="card-title-text">sinopsis</h5>
+              <p
+                class="card-text -b-expander -b-text-undexpanded"
+                title="Expandir"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, a ipsam enim corporis laudantium, nostrum,
+                necessitatibus molestias adipisci tempore consectetur nesciunt
+                veritatis autem esse vitae repellat sint sit assumenda error!
+                Error corrupti saepe, rem repellendus incidunt unde ipsa
+                cupiditate ea nulla, eaque sequi soluta alias mollitia quisquam
+                id quaerat, accusantium impedit atque exercitationem recusandae
+                eveniet? Reiciendis facilis officia modi architecto. Repellendus
+                unde, suscipit, at excepturi velit accusamus sunt delectus
+                minima perferendis omnis reprehenderit, ullam sequi distinctio!
+                Voluptates vitae, maxime ea necessitatibus eaque corporis!
+                Tempora vitae iure necessitatibus non aliquam reprehenderit.
+              </p>
+              <a href="pelicula.html">Ver más</a>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-6 col-sm-12 estrenos-peliculas-iten">
+            <img
+              src="../img/estrenos/la-extorsion.jpg"
+              alt="la extorsion"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title subtitulo">La extorsion</h2>
+              <b>Origen: </b>Argentina
+              <br />
+              <p class="cortar" title="Animación, Fantasía, Familia, Suspenso, Romance"><b>Género: </b>Animación, Fantasía, Familia, Suspenso, Romance</p>
+              <b>Duración: </b>157 minutos
 
-        <a href="pelicula.html">Ver más</a>
-      </section>
-      <section class="estrenos-peliculas">
-        <h1 class="titulo">Viernes, 12 de mayo de 2023</h1>
-        <section class="estrenos-peliculas-iten">
-          <a href="#">
+              <h5 class="card-title-text">sinopsis</h5>
+              <p
+                class="card-text -b-expander -b-text-undexpanded"
+                title="Expandir"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat, molestias. Maiores voluptatum ex cum distinctio error,
+                expedita repudiandae ad accusamus dolore ipsam soluta iusto
+                neque laboriosam quibusdam, sequi quisquam sed!
+              </p>
+              <a href="pelicula.html">Ver más</a>
+            </div>            
+          </div>
+          <div class="card col-lg-3 col-md-6 col-sm-12 estrenos-peliculas-iten">
+            <img
+              src="../img/estrenos/sombras-de-un-crimen.jpg"
+              alt="sombras de un crimen"
+              class="card-img-top"
+            />
+            <div class="card-body">              
+            <h2 class="card-title subtitulo">Sombras de un crimen</h2>
+            <b>Origen: </b>Estados Unidos
+            <br />
+            <p class="cortar" title="Accion, Fantasía, Familia, Suspenso"><b>Género: </b>Accion, Fantasía, Familia, Suspenso</p>
+            <b>Duración: </b>207 minutos
+          
+            <h5 class="card-title-text">sinopsis</h5>
+            <p class="card-text -b-expander -b-text-undexpanded" title="Expandir">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus ad nostrum suscipit nesciunt expedita, explicabo
+              totam perspiciatis exercitationem animi labore inventore sapiente
+              facere ipsa ut odio nisi iure consequatur cupiditate. Rerum
+              nostrum consectetur quaerat sequi repellat corporis nam reiciendis
+              natus debitis odio dolore odit, possimus sapiente voluptatibus
+              illum dolorem architecto culpa placeat sit. Quaerat quae quis non
+              magni vel nihil.
+            </p>
+            <a href="pelicula.html">Ver más</a>
+          </div>          
+        </div>
+        <div class="row fila-estrenos justify-content-around align-items-center">
+          <h1 class="estrenos-peliculas-titulo titulo">
+            Martes, 13 de Junio
+          </h1>
+          <div class="card col-lg-3 col-md-6 col-sm-12 estrenos-peliculas-iten">
+            <img
+              src="../img/estrenos/el-exorcista-del-papa.jpg"
+              alt="el exorcista del papa"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title subtitulo">El exorcista del papa</h2>
+              <b>Origen: </b>Inglaterra
+              <br />
+              <p class="cortar" title="Terror, Suspenso"><b>Género: </b>Terror, Suspenso </p>             
+              <b>Duración: </b>309 minutos
+
+              <h5 class="card-title-text">sinopsis</h5>
+              <p
+                class="card-text -b-expander -b-text-undexpanded"
+                title="Expandir"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, a ipsam enim corporis laudantium, nostrum,
+                necessitatibus molestias adipisci tempore consectetur nesciunt
+                veritatis autem esse vitae repellat sint sit assumenda error!
+                Error corrupti saepe, rem repellendus incidunt unde ipsa
+                cupiditate ea nulla, eaque sequi soluta alias mollitia quisquam
+                id quaerat, accusantium impedit atque exercitationem recusandae
+                eveniet? Reiciendis facilis officia modi architecto. Repellendus
+                unde, suscipit, at excepturi velit accusamus sunt delectus
+                minima perferendis omnis reprehenderit, ullam sequi distinctio!
+                Voluptates vitae, maxime ea necessitatibus eaque corporis!
+                Tempora vitae iure necessitatibus non aliquam reprehenderit.
+              </p>
+              <a href="pelicula.html">Ver más</a>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-6 col-sm-12 estrenos-peliculas-iten">
             <img
               src="../img/estrenos/guardianes-de-la-galaxia-vol3.jpg"
-              alt="guardianes-de-la-galaxia-vol3"
+              alt="guardianes de la galaxia vol3"
+              class="card-img-top"
             />
-          </a>
-          <h2 class="subtitulo">Guardianes de la galaxia. Vol.3</h2>
+            <div class="card-body">
+              <h2 class="card-title subtitulo">
+                Guardianes de la galaxia.
+              </h2>
+              <b>Origen: </b>Argentina
+              <br />
+              <p class="cortar"><b>Género: </b>Animación, Fantasía, Familia, Comedia, Romance </p>              
+              <b>Duración: </b>189 minutos
+              
+              <h5 class="card-title-text">sinopsis</h5>
+              <p
+                class="card-text -b-expander -b-text-undexpanded"
+                title="Expandir"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat, molestias. Maiores voluptatum ex cum distinctio error,
+                expedita repudiandae ad accusamus dolore ipsam soluta iusto
+                neque laboriosam quibusdam, sequi quisquam sed!
+              </p>
+              <a href="pelicula.html">Ver más</a>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-6 col-sm-12 estrenos-peliculas-iten">
+            <img
+              src="../img/estrenos/el-despertar.jpg"
+              alt="el despertar"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title subtitulo">El despertar</h2>
+              <b>Origen: </b>Brazil
+              <br />
+              <p class="cortar" title=""><b>Género: </b>Terror, romance</p>              
+              <b>Duración: </b>229 minutos
 
-          <b>Origen: </b>Argentina
-          <br />
-          <b>Género: </b>Animación, Fantasía, Familia, Comedia, Romance
-          <br />
-          <b>Duración</b>189 minutos
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-            molestias. Maiores voluptatum ex cum distinctio error, expedita
-            repudiandae ad accusamus dolore ipsam soluta iusto neque laboriosam
-            quibusdam, sequi quisquam sed!
-          </p>
+              <h5 class="card-title-text">sinopsis</h5>
+              <p
+                class="card-text -b-expander -b-text-undexpanded"
+                title="Expandir"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id
+                mollitia nisi voluptatum nihil sit itaque temporibus officiis
+                porro, deleniti commodi suscipit fugit fuga cupiditate
+                voluptatibus accusamus, sapiente odio ea! Deserunt saepe minus
+                tenetur nobis consectetur, fugit fuga molestias libero optio eum
+                nulla delectus. Vel quae temporibus enim tempore aperiam culpa
+                debitis, soluta modi velit tenetur pariatur a libero saepe.
+              </p>
+              <a href="pelicula.html">Ver más</a>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-6 col-sm-12 estrenos-peliculas-iten">
+            <img
+              src="../img/estrenos/el-exorcista-del-papa.jpg"
+              alt="el exorcista del papa"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title subtitulo">El exorcista del papa</h2>
+              <b>Origen: </b>Inglaterra
+              <br />
+              <p class="cortar" title="Terror, Suspenso"><b>Género: </b>Terror, Suspenso </p>             
+              <b>Duración: </b>309 minutos
 
-          <a href="pelicula.html">Ver más</a>
-        </section>
-      </section>
-      <section class="estrenos-peliculas-iten">
-        <a href="#">
-          <img
-            src="../img/estrenos/sombras-de-un-crimen.jpg"
-            alt="sombras-de-un-crimen"
-          />
-        </a>
-        <h2 class="subtitulo">Sombras de un crimen</h2>
+              <h5 class="card-title-text">sinopsis</h5>
+              <p
+                class="card-text -b-expander -b-text-undexpanded"
+                title="Expandir"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, a ipsam enim corporis laudantium, nostrum,
+                necessitatibus molestias adipisci tempore consectetur nesciunt
+                veritatis autem esse vitae repellat sint sit assumenda error!
+                Error corrupti saepe, rem repellendus incidunt unde ipsa
+                cupiditate ea nulla, eaque sequi soluta alias mollitia quisquam
+                id quaerat, accusantium impedit atque exercitationem recusandae
+                eveniet? Reiciendis facilis officia modi architecto. Repellendus
+                unde, suscipit, at excepturi velit accusamus sunt delectus
+                minima perferendis omnis reprehenderit, ullam sequi distinctio!
+                Voluptates vitae, maxime ea necessitatibus eaque corporis!
+                Tempora vitae iure necessitatibus non aliquam reprehenderit.
+              </p>
+              <a href="pelicula.html">Ver más</a>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-6 col-sm-12 estrenos-peliculas-iten">
+            <img
+              src="../img/estrenos/la-extorsion.jpg"
+              alt="la extorsion"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title subtitulo">La extorsion</h2>
+              <b>Origen: </b>Argentina
+              <br />
+              <p class="cortar" title="Animación, Fantasía, Familia, Suspenso, Romance"><b>Género: </b>Animación, Fantasía, Familia, Suspenso, Romance</p>
+              <b>Duración: </b>157 minutos
 
-        <b>Origen: </b>Argentina
-        <br />
-        <b>Género: </b>Animación, Fantasía, Familia, Comedia, Romance
-        <br />
-        <b>Duración</b>189 minutos
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-          molestias. Maiores voluptatum ex cum distinctio error, expedita
-          repudiandae ad accusamus dolore ipsam soluta iusto neque laboriosam
-          quibusdam, sequi quisquam sed!
-        </p>
-
-        <a href="pelicula.html">Ver más</a>
-      </section>
+              <h5 class="card-title-text">sinopsis</h5>
+              <p
+                class="card-text -b-expander -b-text-undexpanded"
+                title="Expandir"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat, molestias. Maiores voluptatum ex cum distinctio error,
+                expedita repudiandae ad accusamus dolore ipsam soluta iusto
+                neque laboriosam quibusdam, sequi quisquam sed!
+              </p>
+              <a href="pelicula.html">Ver más</a>
+            </div>            
+          </div>
+          <div class="card col-lg-3 col-md-6 col-sm-12 estrenos-peliculas-iten">
+            <img
+              src="../img/estrenos/sombras-de-un-crimen.jpg"
+              alt="sombras de un crimen"
+              class="card-img-top"
+            />
+            <div class="card-body">              
+            <h2 class="card-title subtitulo">Sombras de un crimen</h2>
+            <b>Origen: </b>Estados Unidos
+            <br />
+            <p class="cortar" title="Accion, Fantasía, Familia, Suspenso"><b>Género: </b>Accion, Fantasía, Familia, Suspenso</p>
+            <b>Duración: </b>207 minutos
+          
+            <h5 class="card-title-text">sinopsis</h5>
+            <p class="card-text -b-expander -b-text-undexpanded" title="Expandir">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus ad nostrum suscipit nesciunt expedita, explicabo
+              totam perspiciatis exercitationem animi labore inventore sapiente
+              facere ipsa ut odio nisi iure consequatur cupiditate. Rerum
+              nostrum consectetur quaerat sequi repellat corporis nam reiciendis
+              natus debitis odio dolore odit, possimus sapiente voluptatibus
+              illum dolorem architecto culpa placeat sit. Quaerat quae quis non
+              magni vel nihil.
+            </p>
+            <a href="pelicula.html">Ver más</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-6 col-sm-12 estrenos-peliculas-iten">
+            <img
+              src="../img/estrenos/guardianes-de-la-galaxia-vol3.jpg"
+              alt="guardianes de la galaxia vol3"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title subtitulo">
+                Guardianes de la galaxia.
+              </h2>
+              <b>Origen: </b>Argentina
+              <br />
+              <p class="cortar"><b>Género: </b>Animación, Fantasía, Familia, Comedia, Romance </p>              
+              <b>Duración: </b>189 minutos
+              
+              <h5 class="card-title-text">sinopsis</h5>
+              <p
+                class="card-text -b-expander -b-text-undexpanded"
+                title="Expandir"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat, molestias. Maiores voluptatum ex cum distinctio error,
+                expedita repudiandae ad accusamus dolore ipsam soluta iusto
+                neque laboriosam quibusdam, sequi quisquam sed!
+              </p>
+              <a href="pelicula.html">Ver más</a>
+            </div>
+          </div>
+      </div>
     </section>
+
     <footer class="footer">
       <section class="footer-copy">
         <!-- A esta etiqueta P la completo con css para poder cambiar al contenido que quiero dependiendo la pantalla-->
-        <p></p>  
+        <p></p>
       </section>
       <section class="footer-logo">
         <img class="logo" src="../img/logo.png" alt="logo" />
@@ -199,8 +535,13 @@
         <a href="https://www.instagram.com/">
           <i class="fa-brands fa-instagram"></i>
         </a>
-    </section>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/corteParrafo.js"></script>  
+  </body>
 </html>
