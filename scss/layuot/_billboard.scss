@@ -16,7 +16,7 @@
     }
 
     .cart-title-movie{
-        border-bottom: 0.1rem solid $primaryColor;
+        border-bottom: 0.1rem solid white;
         background-color: $seccondaryColor;
         padding: $p-default;
         @include sizes(default, 100%);

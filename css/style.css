@@ -111,7 +111,7 @@ body {
   border-top-right-radius: 3.5% !important;
 }
 .cart-card .cart-title-movie {
-  border-bottom: 0.1rem solid #CE1793 !important;
+  border-bottom: 0.1rem solid white;
   background-color: #8732CD !important;
   padding: 0.5rem !important;
   width: 100% !important;
