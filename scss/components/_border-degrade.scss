@@ -1,0 +1,26 @@
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .b-degrade {
+    height: 0.2rem;
+    background: rgb(189, 189, 189);
+    background: linear-gradient(
+      90deg,
+      #fff 0%,
+      rgba(150, 126, 197, 1) 0%,
+      $seccondaryColor 48%,
+      $primaryColor 100%
+    );
+    background-size: 300% 100%;
+    animation: gradient 5s ease infinite;
+  }

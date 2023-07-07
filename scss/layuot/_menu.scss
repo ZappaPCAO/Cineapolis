@@ -1,31 +1,42 @@
-.menu{
-    background-color: $bgColor;
-    padding: 0.5rem 1.5rem !important;
-    border-bottom: 0.2rem solid transparent !important;
-    border-image: $borderDegrade;
-    @include sizes(100%, 100% );
-    a{
+.nav-down {
+    top: 0;
+}
+.nav-up {
+    top: -5rem;
+}
+header {
+    position: sticky;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+    z-index: 100;
+ 
+    .menu {
+      background-color: $bgColor !important;
+      padding: 0.5rem 1.5rem !important;
+      @include sizes(100%, 100%);
+      a {
         color: white;
         text-transform: uppercase !important;
         transition: color 0.25s !important;
-        &.active{
-            color: $primaryColor;
+        &.active {
+          color: $primaryColor !important;
         }
-        &:hover{
-            color: $seccondaryColor 
+        &:hover {
+          color: $seccondaryColor !important;
         }
-    }
-    .menu-logo{
+      }
+      .menu-logo {
         @include sizes(3rem, 3rem);
-    }
-    .icono-login{
+      }
+      .icono-login {
         font-size: x-large;
         text-align: center;
         margin-left: 0.5rem;
-    }
-    .dropdown-menu{
-        a{
-            color: #000 !important;
+      }
+      .dropdown-menu {
+        a {
+          color: #000 !important;
         }
+      }
     }
-}
+  }

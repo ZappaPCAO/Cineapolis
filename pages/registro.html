@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartelera-Cineapolis</title>
+    
+    <title>CINEAPOLIS | REGISTRO</title>
 
-    <!--boostrap-->
+    <!--META ICONO-->
+    <link rel="icon" href="../img/logo-meta.ico" type="image/x-icon">
+    <!--META DESCRIPTION-->
+    <meta name="description" content="Sumérgete en el emocionante mundo del cine en nuestra página de películas. Descubre reseñas, trailers, sinopsis, noticias y recomendaciones sobre las últimas producciones cinematográficas. Explora todo lo que necesitas saber sobre tus películas favoritas. Amplia variedad de géneros, desde acción y aventura hasta drama y comedia. Únete a nuestra comunidad cinéfila y mantente al día con los estrenos más esperados y redescubre clásicos atemporales. ¡Encuentra tu próxima película favorita y déjate llevar por la magia del cine en nuestro sitio dedicado al séptimo arte!">
+    <!--META KEYBORDS-->
+    <meta name="keywords" content="Cine, Películas, Streaming, Cine en casa, Cartelera, Próximos estrenos, Críticas de películas, Actores y actrices, Géneros cinematográficos, Director de cine, Premios de cine, Festival de cine, Taquilla, Películas clásicas, Cine independiente, Suspenso, Acción, Comedia, Drama, Ciencia ficción, Fantasía, Terror, Documentales">
+    <!--BOOSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
-
     <!--css-->
     <link rel="stylesheet" href="../css/style.css" />
-
-    <!--Iconos-->
+    <!--ICONOS-->
     <script
       src="https://kit.fontawesome.com/febcde3020.js"
       crossorigin="anonymous"
@@ -40,7 +44,7 @@
             </li>
             <li class="nav-item">
               <div class="drop dropdown d-inline-block justify-content-start">
-                <a class="icono-login active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="icono-login" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa-solid fa-circle-user"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-lg-end">
@@ -53,14 +57,16 @@
         </div>        
       </div>
     </nav>
+    <div class="b-degrade"></div>
   </header> 
-  <section class="login-bg container w-75 mt-5 rounded shadow">
-    <div class="row align-items-stretch">        
-      <div class="col bg-white p-5 rounded">
-        <h1 class="titulo">Registrate</h1>
+  <section class="form-container container w-75">
+    <div class="align-items-stretch">
+      <div class="form-lr col bg-white p-5 rounded">
+        <h1 class="titulo">/Registrate</h1>
+        <hr />
         <!--LOGIN-->
-        <form action="#">
-          <div class="mb-4">
+        <form action="#" class="row">
+          <div class="col-lg-6 mb-4">
             <label for="nombre">Nombre:</label>
             <input
               class="form-control"
@@ -69,91 +75,117 @@
               name="nombre"
               required
               placeholder="Tomás"
-            /></div>
-          <div class="mb-4"><label for="apellido">Apellido:</label>
-            <input class="form-control"
+            />
+          </div>
+          <div class="col-lg-6 mb-4">
+            <label for="apellido">Apellido:</label>
+            <input
+              class="form-control"
               type="text"
               id="apellido"
               name="apellido"
               required
               placeholder="Perez"
-            /></div>
-          <div class="mb-4"><label for="email">Correo electrónico:</label>            
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email">Correo electrónico:</label>
             <input
-            class="form-control"
+              class="form-control"
               type="email"
               id="email"
               name="email"
               required
               placeholder="pedroperez@..."
-            /></div>
-          <div class="mb-4"><label for="genero">Género:</label>
+            />
+          </div>
+          <div class="mb-4">
+            <label for="genero">Género:</label>
             <select id="genero" name="genero" required class="form-select">
               <option value="">Selecciona una opción</option>
               <option value="masculino">Masculino</option>
               <option value="femenino">Femenino</option>
               <option value="otro">Otro</option>
-            </select></div>
-          <div class="mb-4"><label for="contraseña">Contraseña:</label>
-            <input class="form-control"
+            </select>
+          </div>
+          <div class="mb-4 col-lg-6">
+            <label for="contraseña">Contraseña:</label>
+            <input
+              class="form-control"
               type="password"
               id="contraseña"
               name="contraseña"
               minlength="6"
               required
               placeholder="*******"
-            /></div>
-          <div class="mb-4"><label for="confirmar-contraseña">Confirmar contraseña:</label>
+            />
+          </div>
+          <div class="mb-4 col-lg-6">
+            <label for="confirmar-contraseña">Confirmar contraseña:</label>
             <input
-            class="form-control"
+              class="form-control"
               type="password"
               id="confirmar-contraseña"
               name="confirmar-contraseña"
               minlength="6"
               required
               placeholder="*******"
-            /></div>
+            />
+          </div>
 
           <div class="d-grid">
-            <button type="submit" class="btn-system btn btn-primary">Iniciar Sesión</button>
+            <button type="submit" class="btn-system">Registrate</button>
           </div>
           <div class="my-3">
-            <span>No tienes cuenta? <a href="registro.html">Regístrate</a></span>
-            <br>
+            <span
+              >ya tienes cuenta?
+              <a href="login.html">Iniciar Sesion</a></span
+            >
+            <br />
             <span><a href="#">Olvide mi contraseña</a></span>
           </div>
         </form>
+        <hr />
         <!--Ingresar con redes sociales-->
-        <div class="container w-100 my-5">
+        <div class="container w-100 my-1">
           <div class="row text-center">
             <div class="col-12">Registrate con</div>
           </div>
           <div class="row">
             <div class="col">
-              <button class="btn btn-outline-primary w-100 my-1">
+              <button class="btn-system w-100 my-1 btn-fb">
                 <div class="row align-items-center">
                   <div class="col-2 d-none d-md-block">
-                    <img src="../img/facebook.png" width="16" alt="icon facebook">
+                    <img
+                      src="../img/facebook.png"
+                      width="16"
+                      alt="icon facebook"
+                    />
                   </div>
                   <div class="col-12 col-md-10 text-center">Facebook</div>
                 </div>
               </button>
             </div>
             <div class="col">
-              <button class="btn btn-outline-danger w-100 my-1">
+              <button class="btn-system w-100 my-1 btn-g">
                 <div class="row align-items-center">
                   <div class="col-2 d-none d-md-block">
-                    <img src="../img/google.png" width="16" alt="icon google">
+                    <img
+                      src="../img/google.png"
+                      width="16"
+                      alt="icon google"
+                    />
                   </div>
                   <div class="col-12 col-md-10 text-center">Google</div>
                 </div>
               </button>
-            </div>              
+            </div>
           </div>
         </div>
       </div>
-    </div>      
-  </section>  
+    </div>
+  </section> 
+  <div class="b-degrade"></div>
   <footer class="footer">
     <section class="footer-copy">
         <!-- A esta etiqueta P la completo con css para poder cambiar al contenido que quiero dependiendo la pantalla-->
